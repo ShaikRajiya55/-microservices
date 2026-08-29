@@ -1,0 +1,43 @@
+name: NexusCart Continuous Integration Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+    - name: Checkout Source Code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js Environment ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - name: Install Project Dependencies
+      run: npm ci
+
+    - name: Execute TypeScript Typecheck
+      run: npm run typecheck
+
+    - name: Execute ESLint Code Quality Inspection
+      run: npm run lint
+
+    - name: Generate Prisma Database Client
+      run: npx prisma generate
+
+    - name: Execute Automated Unit & Integration Tests (Minimum 5 Test Cases)
+      run: npm run test:coverage
+
+    - name: Build Application Production Distribution
+      run: npm run build

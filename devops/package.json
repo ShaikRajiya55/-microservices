@@ -1,0 +1,26 @@
+{
+  "name": "devops-platform",
+  "version": "2.4.0",
+  "description": "OpsMatrix DevOps Control & Orchestration Platform",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "node server.js",
+    "start:backend": "node backend/dist/api/server.js",
+    "cli": "node cli/dist/index.js",
+    "test": "node tests/test_runner.ts"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.17.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "@types/node": "^20.12.12"
+  }
+}

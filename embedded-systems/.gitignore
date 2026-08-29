@@ -1,0 +1,9 @@
+*.o
+*.a
+*.so
+*.exe
+nexos_app
+nexos_test_runner
+build/
+node_modules/
+.DS_Store

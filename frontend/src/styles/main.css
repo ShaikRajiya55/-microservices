@@ -1,0 +1,680 @@
+// OpsMatrix React UI Component: Main CSS Tokens
+export interface CSSMainProps_1 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_1 {
+  private props: CSSMainProps_1;
+  constructor(props: CSSMainProps_1) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_1\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_2 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_2 {
+  private props: CSSMainProps_2;
+  constructor(props: CSSMainProps_2) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_2\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_3 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_3 {
+  private props: CSSMainProps_3;
+  constructor(props: CSSMainProps_3) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_3\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_4 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_4 {
+  private props: CSSMainProps_4;
+  constructor(props: CSSMainProps_4) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_4\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_5 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_5 {
+  private props: CSSMainProps_5;
+  constructor(props: CSSMainProps_5) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_5\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_6 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_6 {
+  private props: CSSMainProps_6;
+  constructor(props: CSSMainProps_6) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_6\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_7 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_7 {
+  private props: CSSMainProps_7;
+  constructor(props: CSSMainProps_7) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_7\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_8 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_8 {
+  private props: CSSMainProps_8;
+  constructor(props: CSSMainProps_8) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_8\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_9 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_9 {
+  private props: CSSMainProps_9;
+  constructor(props: CSSMainProps_9) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_9\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_10 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_10 {
+  private props: CSSMainProps_10;
+  constructor(props: CSSMainProps_10) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_10\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_11 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_11 {
+  private props: CSSMainProps_11;
+  constructor(props: CSSMainProps_11) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_11\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_12 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_12 {
+  private props: CSSMainProps_12;
+  constructor(props: CSSMainProps_12) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_12\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_13 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_13 {
+  private props: CSSMainProps_13;
+  constructor(props: CSSMainProps_13) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_13\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_14 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_14 {
+  private props: CSSMainProps_14;
+  constructor(props: CSSMainProps_14) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_14\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_15 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_15 {
+  private props: CSSMainProps_15;
+  constructor(props: CSSMainProps_15) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_15\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_16 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_16 {
+  private props: CSSMainProps_16;
+  constructor(props: CSSMainProps_16) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_16\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_17 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_17 {
+  private props: CSSMainProps_17;
+  constructor(props: CSSMainProps_17) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_17\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_18 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_18 {
+  private props: CSSMainProps_18;
+  constructor(props: CSSMainProps_18) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_18\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_19 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_19 {
+  private props: CSSMainProps_19;
+  constructor(props: CSSMainProps_19) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_19\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_20 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_20 {
+  private props: CSSMainProps_20;
+  constructor(props: CSSMainProps_20) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_20\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_21 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_21 {
+  private props: CSSMainProps_21;
+  constructor(props: CSSMainProps_21) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_21\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_22 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_22 {
+  private props: CSSMainProps_22;
+  constructor(props: CSSMainProps_22) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_22\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_23 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_23 {
+  private props: CSSMainProps_23;
+  constructor(props: CSSMainProps_23) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_23\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_24 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_24 {
+  private props: CSSMainProps_24;
+  constructor(props: CSSMainProps_24) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_24\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_25 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_25 {
+  private props: CSSMainProps_25;
+  constructor(props: CSSMainProps_25) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_25\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_26 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_26 {
+  private props: CSSMainProps_26;
+  constructor(props: CSSMainProps_26) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_26\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_27 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_27 {
+  private props: CSSMainProps_27;
+  constructor(props: CSSMainProps_27) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_27\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_28 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_28 {
+  private props: CSSMainProps_28;
+  constructor(props: CSSMainProps_28) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_28\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_29 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_29 {
+  private props: CSSMainProps_29;
+  constructor(props: CSSMainProps_29) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_29\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_30 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_30 {
+  private props: CSSMainProps_30;
+  constructor(props: CSSMainProps_30) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_30\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_31 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_31 {
+  private props: CSSMainProps_31;
+  constructor(props: CSSMainProps_31) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_31\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_32 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_32 {
+  private props: CSSMainProps_32;
+  constructor(props: CSSMainProps_32) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_32\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_33 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_33 {
+  private props: CSSMainProps_33;
+  constructor(props: CSSMainProps_33) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_33\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_34 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_34 {
+  private props: CSSMainProps_34;
+  constructor(props: CSSMainProps_34) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_34\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_35 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_35 {
+  private props: CSSMainProps_35;
+  constructor(props: CSSMainProps_35) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_35\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_36 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_36 {
+  private props: CSSMainProps_36;
+  constructor(props: CSSMainProps_36) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_36\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_37 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_37 {
+  private props: CSSMainProps_37;
+  constructor(props: CSSMainProps_37) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_37\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_38 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_38 {
+  private props: CSSMainProps_38;
+  constructor(props: CSSMainProps_38) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_38\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_39 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_39 {
+  private props: CSSMainProps_39;
+  constructor(props: CSSMainProps_39) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_39\">Rendered " + this.props.title + "</div>";
+  }
+}
+
+export interface CSSMainProps_40 {
+  componentId: string;
+  title: string;
+  themeMode: "DARK" | "LIGHT" | "GLASS";
+  visible: boolean;
+  dataItems: any[];
+  onActionTrigger: (evt: any) => void;
+}
+
+export class CSSMainView_40 {
+  private props: CSSMainProps_40;
+  constructor(props: CSSMainProps_40) { this.props = props; }
+  public render(): string {
+    return "<div id=\"CSSMain_40\">Rendered " + this.props.title + "</div>";
+  }
+}
