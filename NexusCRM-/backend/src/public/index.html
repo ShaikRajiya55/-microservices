@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexusCRM - Enterprise Sales Suite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.85);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --primary-accent: #3b82f6;
+      --primary-hover: #2563eb;
+      --success-accent: #10b981;
+      --warning-accent: #f59e0b;
+      --purple-accent: #a855f7;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.22) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.18) 0px, transparent 50%);
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    .container { max-width: 1400px; margin: 0 auto; padding: 24px; }
+
+    .glass-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo-group { display: flex; align-items: center; gap: 16px; }
+
+    .logo-badge {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.4rem;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 8px;
+      background: rgba(15, 23, 42, 0.8);
+      padding: 6px;
+      border-radius: 12px;
+      border: 1px solid var(--card-border);
+    }
+
+    .nav-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-btn:hover {
+      color: white;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-btn.active {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+      color: white !important;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .tab-pane {
+      display: none;
+    }
+
+    .tab-pane.active {
+      display: block !important;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .stat-label { color: var(--text-muted); font-size: 0.85rem; font-weight: 500; text-transform: uppercase; }
+    .stat-val { font-size: 2.2rem; font-weight: 700; margin: 8px 0 4px 0; }
+    .stat-trend { font-size: 0.8rem; color: var(--success-accent); }
+
+    /* Kanban Board */
+    .kanban-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    .kanban-col {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 16px;
+      min-height: 520px;
+    }
+
+    .col-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .col-title { font-weight: 600; font-size: 0.95rem; }
+
+    .deal-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 12px;
+      transition: all 0.2s ease;
+    }
+
+    .deal-card:hover {
+      border-color: var(--primary-accent);
+      box-shadow: 0 4px 16px rgba(59, 130, 246, 0.2);
+    }
+
+    .deal-amount { font-size: 1.15rem; font-weight: 700; color: #60a5fa; margin: 6px 0; }
+
+    .stage-move-btns {
+      display: flex;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .btn-sm {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .btn-sm:hover { background: rgba(59, 130, 246, 0.3); border-color: #3b82f6; }
+
+    .badge {
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    .badge-score { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.4); }
+    .badge-status { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.4); }
+
+    .btn-primary-action {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn-primary-action:hover { opacity: 0.9; }
+
+    .table { width: 100%; border-collapse: collapse; }
+    .table th, .table td { padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--card-border); }
+    .table th { color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; }
+
+    /* Modal Styling */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .modal-overlay.active { opacity: 1; pointer-events: auto; }
+
+    .modal-box {
+      background: #1e293b;
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 540px;
+      padding: 28px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; margin-bottom: 6px; font-size: 0.85rem; color: var(--text-muted); }
+    .form-input {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--card-border);
+      background: rgba(15, 23, 42, 0.8);
+      color: white;
+      font-size: 0.95rem;
+    }
+    .form-input:focus { border-color: var(--primary-accent); outline: none; }
+
+    .funnel-bar {
+      height: 38px;
+      background: linear-gradient(90deg, #3b82f6 0%, #10b981 100%);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      font-weight: 600;
+      transition: width 0.4s ease;
+    }
+
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+    .filter-btn.active { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: #3b82f6; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="glass-card header">
+      <div class="logo-group">
+        <div class="logo-badge">N</div>
+        <div>
+          <h2 style="margin:0; font-size:1.4rem;">NexusCRM Enterprise</h2>
+          <span style="color:var(--text-muted); font-size:0.8rem;">Sales Intelligence & Automation Platform v1.0</span>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="nav-tabs">
+        <button class="nav-btn active" id="btn-tab-analytics">📊 Analytics</button>
+        <button class="nav-btn" id="btn-tab-leads">🎯 Leads</button>
+        <button class="nav-btn" id="btn-tab-deals">💼 Deals Pipeline</button>
+        <button class="nav-btn" id="btn-tab-workflows">⚡ Workflows</button>
+        <button class="nav-btn" id="btn-tab-settings">⚙️ Settings</button>
+      </nav>
+    </header>
+
+    <!-- Tab 1: Executive Analytics -->
+    <section id="tab-analytics" class="tab-pane active">
+      <div class="grid-4">
+        <div class="glass-card">
+          <div class="stat-label">Total Pipeline Value</div>
+          <div class="stat-val" id="metric-pipeline" style="color:#60a5fa;">$0</div>
+          <div class="stat-trend">↑ Live aggregate sum</div>
+        </div>
+
+        <div class="glass-card">
+          <div class="stat-label">Closed Won Revenue</div>
+          <div class="stat-val" id="metric-revenue" style="color:#34d399;">$0</div>
+          <div class="stat-trend">↑ Closed opportunities</div>
+        </div>
+
+        <div class="glass-card">
+          <div class="stat-label">Total Leads</div>
+          <div class="stat-val" id="metric-leads-count" style="color:#c084fc;">0</div>
+          <div class="stat-trend">↑ Active lead pipeline</div>
+        </div>
+
+        <div class="glass-card">
+          <div class="stat-label">Win Rate Percentage</div>
+          <div class="stat-val" id="metric-win-rate" style="color:#f59e0b;">0%</div>
+          <div class="stat-trend">↑ Stage win probability</div>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns: 2fr 1fr; gap:20px;">
+        <div class="glass-card">
+          <h3 style="margin-top:0;">Lead Conversion Funnel</h3>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:20px;">Live Progression Funnel</p>
+          <div id="funnel-container"></div>
+        </div>
+
+        <div class="glass-card">
+          <h3 style="margin-top:0;">Top Sales Reps</h3>
+          <table class="table">
+            <thead>
+              <tr><th>Rep Name</th><th>Closed</th><th>Revenue</th></tr>
+            </thead>
+            <tbody id="leaderboard-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 2: Leads Management -->
+    <section id="tab-leads" class="tab-pane">
+      <div class="glass-card">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:16px;">
+          <div>
+            <h3 style="margin:0;">Active Lead Qualification Pipeline</h3>
+            <span style="color:var(--text-muted); font-size:0.85rem;">Algorithmic lead scoring & automated conversion</span>
+          </div>
+
+          <div style="display:flex; gap:10px; align-items:center;">
+            <input type="text" id="lead-search" class="form-input" style="width:200px;" placeholder="Search leads...">
+            <div id="lead-filters" style="display:flex; gap:6px;">
+              <button class="filter-btn active" id="flt-all">All</button>
+              <button class="filter-btn" id="flt-new">New</button>
+              <button class="filter-btn" id="flt-qual">Qualified</button>
+              <button class="filter-btn" id="flt-conv">Converted</button>
+            </div>
+            <button class="btn-primary-action" id="btn-open-add-lead">+ Add New Lead</button>
+          </div>
+        </div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Lead Name & Email</th>
+              <th>Company & Revenue</th>
+              <th>Source</th>
+              <th>Lead Score</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="leads-table-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Tab 3: Deals Kanban Pipeline -->
+    <section id="tab-deals" class="tab-pane">
+      <div class="glass-card" style="margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <h3 style="margin:0 0 4px 0;">Interactive Kanban Sales Pipeline</h3>
+          <span style="color:var(--text-muted); font-size:0.85rem;">Move deals across stages to update revenue metrics in real-time</span>
+        </div>
+        <button class="btn-primary-action" id="btn-open-add-deal">+ Add New Deal</button>
+      </div>
+
+      <div class="kanban-grid">
+        <div class="kanban-col">
+          <div class="col-header"><span class="col-title">Discovery (10%)</span><span style="color:var(--text-muted); font-size:0.8rem;" id="sum-DISCOVERY">$0</span></div>
+          <div class="deal-list" id="list-DISCOVERY"></div>
+        </div>
+        <div class="kanban-col">
+          <div class="col-header"><span class="col-title">Qualification (30%)</span><span style="color:var(--text-muted); font-size:0.8rem;" id="sum-QUALIFICATION">$0</span></div>
+          <div class="deal-list" id="list-QUALIFICATION"></div>
+        </div>
+        <div class="kanban-col">
+          <div class="col-header"><span class="col-title">Proposal (60%)</span><span style="color:var(--text-muted); font-size:0.8rem;" id="sum-PROPOSAL">$0</span></div>
+          <div class="deal-list" id="list-PROPOSAL"></div>
+        </div>
+        <div class="kanban-col">
+          <div class="col-header"><span class="col-title">Negotiation (80%)</span><span style="color:var(--text-muted); font-size:0.8rem;" id="sum-NEGOTIATION">$0</span></div>
+          <div class="deal-list" id="list-NEGOTIATION"></div>
+        </div>
+        <div class="kanban-col">
+          <div class="col-header"><span class="col-title" style="color:#34d399;">Closed Won (100%)</span><span style="color:#34d399; font-weight:600; font-size:0.8rem;" id="sum-CLOSED_WON">$0</span></div>
+          <div class="deal-list" id="list-CLOSED_WON"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 4: Workflows -->
+    <section id="tab-workflows" class="tab-pane">
+      <div class="glass-card">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+          <div>
+            <h3 style="margin:0;">Automation Workflow Engine</h3>
+            <span style="color:var(--text-muted); font-size:0.85rem;">Trigger-action rules & execution log audit</span>
+          </div>
+          <button class="btn-primary-action" id="btn-open-add-wf">+ Create Workflow Rule</button>
+        </div>
+
+        <div id="workflows-container" style="display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-bottom:24px;"></div>
+
+        <h4>Workflow Execution Audit Logs</h4>
+        <table class="table">
+          <thead>
+            <tr><th>Execution ID</th><th>Rule Name</th><th>Entity</th><th>Status</th><th>Timestamp</th></tr>
+          </thead>
+          <tbody id="workflow-logs-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Tab 5: Settings -->
+    <section id="tab-settings" class="tab-pane">
+      <div class="glass-card">
+        <h3 style="margin-top:0;">System Settings & Role-Based Access Control (RBAC)</h3>
+        
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+          <div>
+            <h4>Role Permission Matrix</h4>
+            <table class="table">
+              <thead><tr><th>Role</th><th>Lead Access</th><th>Deal Access</th><th>System Admin</th></tr></thead>
+              <tbody>
+                <tr><td><strong>ADMIN</strong></td><td>Full CRUD</td><td>Full CRUD</td><td>Yes</td></tr>
+                <tr><td><strong>SALES_MANAGER</strong></td><td>Full CRUD</td><td>Full CRUD</td><td>No</td></tr>
+                <tr><td><strong>SALES_REP</strong></td><td>Create/Read</td><td>Create/Edit</td><td>No</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <h4>System Configuration</h4>
+            <div class="form-group">
+              <label>API Gateway Endpoint</label>
+              <input type="text" class="form-input" value="http://localhost:4000/api/v1" readonly>
+            </div>
+            <div class="form-group">
+              <label>Default Currency</label>
+              <input type="text" class="form-input" value="USD ($)" readonly>
+            </div>
+            <div class="form-group">
+              <label>JWT Token Expiration</label>
+              <input type="text" class="form-input" value="24 Hours" readonly>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- MODALS -->
+
+  <!-- Modal 1: Add Lead -->
+  <div class="modal-overlay" id="modal-add-lead">
+    <div class="modal-box">
+      <h3 style="margin-top:0;">+ Add New Lead</h3>
+      <form id="form-add-lead">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" id="lead-fn" class="form-input" required placeholder="e.g. Robert">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" id="lead-ln" class="form-input" required placeholder="e.g. Taylor">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="lead-email" class="form-input" required placeholder="e.g. robert@company.com">
+        </div>
+        <div class="form-group">
+          <label>Company Name</label>
+          <input type="text" id="lead-company" class="form-input" required placeholder="e.g. Apex Corp">
+        </div>
+        <div class="form-group">
+          <label>Annual Revenue ($)</label>
+          <input type="number" id="lead-revenue" class="form-input" required placeholder="e.g. 15000000">
+        </div>
+        <div class="form-group">
+          <label>Lead Source</label>
+          <select id="lead-source" class="form-input">
+            <option value="REFERRAL">REFERRAL (+25 pts)</option>
+            <option value="WEBSITE">WEBSITE (+15 pts)</option>
+            <option value="INBOUND_CALL">INBOUND CALL (+20 pts)</option>
+            <option value="OUTBOUND">OUTBOUND (+5 pts)</option>
+          </select>
+        </div>
+        <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:20px;">
+          <button type="button" class="btn-sm" style="padding:10px 16px;" id="btn-close-lead">Cancel</button>
+          <button type="submit" class="btn-primary-action">Save Lead</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 2: Add Deal -->
+  <div class="modal-overlay" id="modal-add-deal">
+    <div class="modal-box">
+      <h3 style="margin-top:0;">+ Add New Deal Opportunity</h3>
+      <form id="form-add-deal">
+        <div class="form-group">
+          <label>Deal Title</label>
+          <input type="text" id="deal-title" class="form-input" required placeholder="e.g. Enterprise License Upgrade">
+        </div>
+        <div class="form-group">
+          <label>Account / Company Name</label>
+          <input type="text" id="deal-account" class="form-input" required placeholder="e.g. Acme Global">
+        </div>
+        <div class="form-group">
+          <label>Deal Amount ($)</label>
+          <input type="number" id="deal-amount" class="form-input" required placeholder="e.g. 120000">
+        </div>
+        <div class="form-group">
+          <label>Pipeline Stage</label>
+          <select id="deal-stage" class="form-input">
+            <option value="DISCOVERY">Discovery (10%)</option>
+            <option value="QUALIFICATION">Qualification (30%)</option>
+            <option value="PROPOSAL">Proposal (60%)</option>
+            <option value="NEGOTIATION">Negotiation (80%)</option>
+            <option value="CLOSED_WON">Closed Won (100%)</option>
+          </select>
+        </div>
+        <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:20px;">
+          <button type="button" class="btn-sm" style="padding:10px 16px;" id="btn-close-deal">Cancel</button>
+          <button type="submit" class="btn-primary-action">Save Deal</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 3: Add Workflow -->
+  <div class="modal-overlay" id="modal-add-workflow">
+    <div class="modal-box">
+      <h3 style="margin-top:0;">+ Create Automation Workflow Rule</h3>
+      <form id="form-add-wf">
+        <div class="form-group">
+          <label>Rule Name</label>
+          <input type="text" id="wf-name" class="form-input" required placeholder="e.g. High Value Deal Alert">
+        </div>
+        <div class="form-group">
+          <label>Event Trigger</label>
+          <select id="wf-trigger" class="form-input">
+            <option value="LEAD_CREATED">Lead Created</option>
+            <option value="DEAL_STAGE_UPDATED">Deal Stage Updated</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Min Score / Min Value Threshold</label>
+          <input type="number" id="wf-min" class="form-input" required placeholder="e.g. 80">
+        </div>
+        <div class="form-group">
+          <label>Action Type</label>
+          <select id="wf-action" class="form-input">
+            <option value="CREATE_TASK">Create Followup Task</option>
+            <option value="SEND_EMAIL">Send Email Notification</option>
+            <option value="TRIGGER_WEBHOOK">Trigger Webhook Call</option>
+          </select>
+        </div>
+        <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:20px;">
+          <button type="button" class="btn-sm" style="padding:10px 16px;" id="btn-close-wf">Cancel</button>
+          <button type="submit" class="btn-primary-action">Save Rule</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Pure Client-Side Executable Script
+    var leads = [
+      { id: 'lead_1', firstName: 'Robert', lastName: 'Taylor', email: 'robert@apextech.com', companyName: 'Apex Tech Solutions', source: 'WEBSITE', revenue: 25000000, score: 85, status: 'QUALIFIED' },
+      { id: 'lead_2', firstName: 'Sophia', lastName: 'Martinez', email: 'sophia@cybersec.org', companyName: 'CyberSec Shield', source: 'REFERRAL', revenue: 45000000, score: 92, status: 'QUALIFIED' },
+      { id: 'lead_3', firstName: 'Alexander', lastName: 'Wright', email: 'a.wright@quantum.io', companyName: 'Quantum Dynamics', source: 'OUTBOUND', revenue: 8000000, score: 65, status: 'NEW' }
+    ];
+
+    var deals = [
+      { id: 'deal_1', title: 'Quantum Analytics Suite', amount: 25000, stage: 'DISCOVERY', account: 'Quantum Dynamics' },
+      { id: 'deal_2', title: 'Apex Cloud Migration', amount: 75000, stage: 'QUALIFICATION', account: 'Apex Tech Solutions' },
+      { id: 'deal_3', title: 'Acme Platform License', amount: 150000, stage: 'PROPOSAL', account: 'Acme Global Holdings' },
+      { id: 'deal_4', title: 'Starlight Infrastructure', amount: 85000, stage: 'NEGOTIATION', account: 'Starlight Dynamics' },
+      { id: 'deal_5', title: 'Enterprise Suite Upgrade', amount: 220000, stage: 'CLOSED_WON', account: 'CyberSec Shield' }
+    ];
+
+    var workflows = [
+      { id: 'wf_1', name: 'High Score Lead Auto-Task', trigger: 'LEAD_CREATED', minScore: 80, action: 'CREATE_TASK', active: true },
+      { id: 'wf_2', name: 'Big Deal Webhook Alert', trigger: 'DEAL_STAGE_UPDATED', minScore: 50000, action: 'TRIGGER_WEBHOOK', active: true }
+    ];
+
+    var workflowLogs = [
+      { id: 'exec_901', rule: 'High Score Lead Auto-Task', entity: 'Sophia Martinez', status: 'SUCCESS', time: '10 mins ago' },
+      { id: 'exec_902', rule: 'Big Deal Webhook Alert', entity: 'Enterprise Suite Upgrade', status: 'SUCCESS', time: '25 mins ago' }
+    ];
+
+    var activeLeadFilter = 'ALL';
+
+    function switchTabByName(name) {
+      var tabBtns = {
+        'analytics': document.getElementById('btn-tab-analytics'),
+        'leads': document.getElementById('btn-tab-leads'),
+        'deals': document.getElementById('btn-tab-deals'),
+        'workflows': document.getElementById('btn-tab-workflows'),
+        'settings': document.getElementById('btn-tab-settings')
+      };
+
+      var tabPanes = {
+        'analytics': document.getElementById('tab-analytics'),
+        'leads': document.getElementById('tab-leads'),
+        'deals': document.getElementById('tab-deals'),
+        'workflows': document.getElementById('tab-workflows'),
+        'settings': document.getElementById('tab-settings')
+      };
+
+      Object.keys(tabBtns).forEach(function(key) {
+        if (key === name) {
+          tabBtns[key].classList.add('active');
+          tabPanes[key].classList.add('active');
+        } else {
+          tabBtns[key].classList.remove('active');
+          tabPanes[key].classList.remove('active');
+        }
+      });
+    }
+
+    document.getElementById('btn-tab-analytics').onclick = function() { switchTabByName('analytics'); };
+    document.getElementById('btn-tab-leads').onclick = function() { switchTabByName('leads'); };
+    document.getElementById('btn-tab-deals').onclick = function() { switchTabByName('deals'); };
+    document.getElementById('btn-tab-workflows').onclick = function() { switchTabByName('workflows'); };
+    document.getElementById('btn-tab-settings').onclick = function() { switchTabByName('settings'); };
+
+    function openModal(id) { document.getElementById(id).classList.add('active'); }
+    function closeModal(id) { document.getElementById(id).classList.remove('active'); }
+
+    document.getElementById('btn-open-add-lead').onclick = function() { openModal('modal-add-lead'); };
+    document.getElementById('btn-open-add-deal').onclick = function() { openModal('modal-add-deal'); };
+    document.getElementById('btn-open-add-wf').onclick = function() { openModal('modal-add-workflow'); };
+
+    document.getElementById('btn-close-lead').onclick = function() { closeModal('modal-add-lead'); };
+    document.getElementById('btn-close-deal').onclick = function() { closeModal('modal-add-deal'); };
+    document.getElementById('btn-close-wf').onclick = function() { closeModal('modal-add-workflow'); };
+
+    document.getElementById('flt-all').onclick = function() { setLeadFilter('ALL', this); };
+    document.getElementById('flt-new').onclick = function() { setLeadFilter('NEW', this); };
+    document.getElementById('flt-qual').onclick = function() { setLeadFilter('QUALIFIED', this); };
+    document.getElementById('flt-conv').onclick = function() { setLeadFilter('CONVERTED', this); };
+
+    function setLeadFilter(filter, btn) {
+      activeLeadFilter = filter;
+      document.querySelectorAll('#lead-filters .filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      renderLeads();
+    }
+
+    document.getElementById('lead-search').oninput = renderLeads;
+
+    document.getElementById('form-add-lead').onsubmit = function(e) {
+      e.preventDefault();
+      var fn = document.getElementById('lead-fn').value;
+      var ln = document.getElementById('lead-ln').value;
+      var email = document.getElementById('lead-email').value;
+      var company = document.getElementById('lead-company').value;
+      var rev = Number(document.getElementById('lead-revenue').value);
+      var source = document.getElementById('lead-source').value;
+
+      var score = calcScore(rev, source);
+      leads.unshift({
+        id: 'lead_' + Date.now(),
+        firstName: fn, lastName: ln, email: email, companyName: company,
+        source: source, revenue: rev, score: score, status: score >= 70 ? 'QUALIFIED' : 'NEW'
+      });
+
+      closeModal('modal-add-lead');
+      this.reset();
+      updateAllView();
+    };
+
+    document.getElementById('form-add-deal').onsubmit = function(e) {
+      e.preventDefault();
+      var title = document.getElementById('deal-title').value;
+      var account = document.getElementById('deal-account').value;
+      var amount = Number(document.getElementById('deal-amount').value);
+      var stage = document.getElementById('deal-stage').value;
+
+      deals.push({ id: 'deal_' + Date.now(), title: title, account: account, amount: amount, stage: stage });
+      closeModal('modal-add-deal');
+      this.reset();
+      updateAllView();
+    };
+
+    document.getElementById('form-add-wf').onsubmit = function(e) {
+      e.preventDefault();
+      var name = document.getElementById('wf-name').value;
+      var trigger = document.getElementById('wf-trigger').value;
+      var minScore = Number(document.getElementById('wf-min').value);
+      var action = document.getElementById('wf-action').value;
+
+      workflows.push({ id: 'wf_' + Date.now(), name: name, trigger: trigger, minScore: minScore, action: action, active: true });
+      closeModal('modal-add-workflow');
+      this.reset();
+      renderWorkflows();
+    };
+
+    function calcScore(rev, source) {
+      var score = 30;
+      if (rev >= 30000000) score += 40;
+      else if (rev >= 10000000) score += 25;
+      if (source === 'REFERRAL') score += 25;
+      if (source === 'INBOUND_CALL') score += 20;
+      if (source === 'WEBSITE') score += 15;
+      return Math.min(100, score);
+    }
+
+    function convertLead(id) {
+      var l = null;
+      for (var i=0; i<leads.length; i++) {
+        if (leads[i].id === id) { l = leads[i]; break; }
+      }
+      if (!l) return;
+      l.status = 'CONVERTED';
+      deals.push({
+        id: 'deal_' + Date.now(),
+        title: l.companyName + ' Opportunity',
+        amount: Math.round(l.revenue * 0.05),
+        stage: 'DISCOVERY',
+        account: l.companyName
+      });
+      updateAllView();
+      alert('🎉 Lead ' + l.firstName + ' ' + l.lastName + ' Converted Successfully!\n\n- Created Account: ' + l.companyName + '\n- Created Primary Contact: ' + l.email + '\n- Added New Deal to Kanban Pipeline ($' + Math.round(l.revenue * 0.05).toLocaleString() + ')');
+    }
+
+    function deleteLead(id) {
+      leads = leads.filter(function(l) { return l.id !== id; });
+      updateAllView();
+    }
+
+    function moveDealStage(id, newStage) {
+      for (var i=0; i<deals.length; i++) {
+        if (deals[i].id === id) { deals[i].stage = newStage; break; }
+      }
+      updateAllView();
+    }
+
+    function toggleWorkflow(id) {
+      for (var i=0; i<workflows.length; i++) {
+        if (workflows[i].id === id) { workflows[i].active = !workflows[i].active; break; }
+      }
+      renderWorkflows();
+    }
+
+    function updateAllView() {
+      renderLeads();
+      renderKanban();
+      renderAnalytics();
+      renderWorkflows();
+    }
+
+    function renderLeads() {
+      var query = document.getElementById('lead-search').value.toLowerCase();
+      var tbody = document.getElementById('leads-table-body');
+      tbody.innerHTML = '';
+
+      var filtered = leads.filter(function(l) {
+        var matchSearch = !query || (l.firstName + ' ' + l.lastName + ' ' + l.companyName + ' ' + l.email).toLowerCase().indexOf(query) !== -1;
+        var matchFilter = activeLeadFilter === 'ALL' || l.status === activeLeadFilter;
+        return matchSearch && matchFilter;
+      });
+
+      filtered.forEach(function(l) {
+        var tr = document.createElement('tr');
+        var statusStyle = l.status === 'CONVERTED' ? 'background:rgba(168,85,247,0.2);color:#c084fc;' : '';
+        var convertBtn = l.status !== 'CONVERTED' ? '<button class="btn-sm" style="background:#3b82f6; color:white;" onclick="convertLead(\'' + l.id + '\')">Convert</button>' : '<span style="font-size:0.8rem; color:var(--text-muted);">Converted</span>';
+        
+        tr.innerHTML = 
+          '<td><strong>' + l.firstName + ' ' + l.lastName + '</strong><br><span style="font-size:0.8rem; color:var(--text-muted);">' + l.email + '</span></td>' +
+          '<td>' + l.companyName + '<br><span style="font-size:0.8rem; color:var(--text-muted);">Rev: $' + l.revenue.toLocaleString() + '</span></td>' +
+          '<td>' + l.source + '</td>' +
+          '<td><span class="badge badge-score">Score: ' + l.score + '/100</span></td>' +
+          '<td><span class="badge badge-status" style="' + statusStyle + '">' + l.status + '</span></td>' +
+          '<td>' + convertBtn + ' <button class="btn-sm" style="background:rgba(239,68,68,0.2); color:#f87171;" onclick="deleteLead(\'' + l.id + '\')">Delete</button></td>';
+        tbody.appendChild(tr);
+      });
+    }
+
+    function renderKanban() {
+      var stages = ['DISCOVERY', 'QUALIFICATION', 'PROPOSAL', 'NEGOTIATION', 'CLOSED_WON'];
+      var stageSums = { DISCOVERY: 0, QUALIFICATION: 0, PROPOSAL: 0, NEGOTIATION: 0, CLOSED_WON: 0 };
+
+      stages.forEach(function(stg) {
+        document.getElementById('list-' + stg).innerHTML = '';
+      });
+
+      deals.forEach(function(d) {
+        if (stageSums[d.stage] !== undefined) {
+          stageSums[d.stage] += d.amount;
+          var listEl = document.getElementById('list-' + d.stage);
+
+          var card = document.createElement('div');
+          card.className = 'deal-card';
+          var winColor = d.stage === 'CLOSED_WON' ? 'color:#34d399;' : '';
+          var leftBtn = d.stage !== 'DISCOVERY' ? '<button class="btn-sm" onclick="moveDealStage(\'' + d.id + '\', \'DISCOVERY\')">&larr;</button>' : '';
+          var rightBtn = d.stage !== 'CLOSED_WON' ? '<button class="btn-sm" onclick="moveDealStage(\'' + d.id + '\', \'' + getNextStage(d.stage) + '\')">&rarr;</button>' : '';
+          var winBtn = d.stage !== 'CLOSED_WON' ? '<button class="btn-sm" style="background:rgba(16,185,129,0.2); color:#34d399;" onclick="moveDealStage(\'' + d.id + '\', \'CLOSED_WON\')">Win</button>' : '';
+
+          card.innerHTML = 
+            '<div style="font-weight:600;">' + d.title + '</div>' +
+            '<div class="deal-amount" style="' + winColor + '">$' + d.amount.toLocaleString() + '</div>' +
+            '<div style="font-size:0.8rem; color:var(--text-muted);">' + d.account + '</div>' +
+            '<div class="stage-move-btns">' + leftBtn + ' ' + rightBtn + ' ' + winBtn + '</div>';
+          listEl.appendChild(card);
+        }
+      });
+
+      stages.forEach(function(stg) {
+        document.getElementById('sum-' + stg).innerText = '$' + stageSums[stg].toLocaleString();
+      });
+    }
+
+    function getNextStage(stg) {
+      var order = ['DISCOVERY', 'QUALIFICATION', 'PROPOSAL', 'NEGOTIATION', 'CLOSED_WON'];
+      var idx = order.indexOf(stg);
+      return idx < order.length - 1 ? order[idx + 1] : stg;
+    }
+
+    function renderAnalytics() {
+      var totalPipeline = 0;
+      var closedWonRev = 0;
+      var wonCount = 0;
+
+      deals.forEach(function(d) {
+        totalPipeline += d.amount;
+        if (d.stage === 'CLOSED_WON') {
+          closedWonRev += d.amount;
+          wonCount++;
+        }
+      });
+
+      document.getElementById('metric-pipeline').innerText = '$' + totalPipeline.toLocaleString();
+      document.getElementById('metric-revenue').innerText = '$' + closedWonRev.toLocaleString();
+      document.getElementById('metric-leads-count').innerText = leads.length;
+
+      var winRate = deals.length > 0 ? Math.round((wonCount / deals.length) * 100) : 0;
+      document.getElementById('metric-win-rate').innerText = winRate + '%';
+
+      var qualCount = leads.filter(function(l) { return l.status === 'QUALIFIED'; }).length;
+      var convCount = leads.filter(function(l) { return l.status === 'CONVERTED'; }).length;
+
+      var funnelContainer = document.getElementById('funnel-container');
+      var p2 = leads.length ? Math.round(((qualCount+convCount)/leads.length)*100) : 0;
+      var p3 = leads.length ? Math.round((convCount/leads.length)*100) : 0;
+
+      funnelContainer.innerHTML = 
+        '<div style="margin-bottom:6px; font-size:0.85rem; color:var(--text-muted);">1. Total Acquired Leads (' + leads.length + ' Leads)</div>' +
+        '<div class="funnel-bar" style="width:100%;">' + leads.length + ' Leads (100%)</div>' +
+        '<div style="margin-bottom:6px; font-size:0.85rem; color:var(--text-muted);">2. Qualified Leads (' + (qualCount + convCount) + ' Leads)</div>' +
+        '<div class="funnel-bar" style="width:' + p2 + '%;">' + (qualCount + convCount) + ' Leads</div>' +
+        '<div style="margin-bottom:6px; font-size:0.85rem; color:var(--text-muted);">3. Converted Deals (' + convCount + ' Converted)</div>' +
+        '<div class="funnel-bar" style="width:' + p3 + '%; background:linear-gradient(90deg, #a855f7 0%, #10b981 100%);">' + convCount + ' Converted</div>';
+
+      var lbody = document.getElementById('leaderboard-table');
+      lbody.innerHTML = 
+        '<tr><td><strong>Sarah Jenkins</strong></td><td>' + wonCount + ' Deals</td><td style="color:#34d399; font-weight:600;">$' + closedWonRev.toLocaleString() + '</td></tr>' +
+        '<tr><td><strong>David Chen</strong></td><td>2 Deals</td><td style="color:#34d399; font-weight:600;">$135,000</td></tr>';
+    }
+
+    function renderWorkflows() {
+      var container = document.getElementById('workflows-container');
+      container.innerHTML = '';
+
+      workflows.forEach(function(wf) {
+        var div = document.createElement('div');
+        div.style.cssText = 'padding:16px; border:1px solid var(--card-border); border-radius:10px; background:rgba(255,255,255,0.02);';
+        var btnStyle = wf.active ? 'background:rgba(16,185,129,0.2);color:#34d399;' : 'background:rgba(239,68,68,0.2);color:#f87171;';
+        var statusTxt = wf.active ? 'ACTIVE' : 'INACTIVE';
+
+        div.innerHTML = 
+          '<div style="display:flex; justify-content:space-between; align-items:center;">' +
+            '<strong>' + wf.name + '</strong>' +
+            '<button class="btn-sm" style="' + btnStyle + '" onclick="toggleWorkflow(\'' + wf.id + '\')">' + statusTxt + '</button>' +
+          '</div>' +
+          '<p style="color:var(--text-muted); font-size:0.85rem; margin:8px 0;">Trigger: ' + wf.trigger + ' &rarr; Action: ' + wf.action + '</p>';
+        container.appendChild(div);
+      });
+
+      var logBody = document.getElementById('workflow-logs-body');
+      logBody.innerHTML = '';
+      workflowLogs.forEach(function(log) {
+        var tr = document.createElement('tr');
+        tr.innerHTML = 
+          '<td>' + log.id + '</td>' +
+          '<td>' + log.rule + '</td>' +
+          '<td>' + log.entity + '</td>' +
+          '<td><span class="badge badge-score">' + log.status + '</span></td>' +
+          '<td style="color:var(--text-muted); font-size:0.85rem;">' + log.time + '</td>';
+        logBody.appendChild(tr);
+      });
+    }
+
+    // Initial View Boot
+    updateAllView();
+  </script>
+</body>
+</html>

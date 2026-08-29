@@ -1,0 +1,39 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Environment variables & local secrets
+.env
+.env.*
+!.env.example.template
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database & SQLite storage
+*.db
+*.sqlite
+*.sqlite3
+prisma/dev.db
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Test coverage reports
+coverage/
+.nyc_output/

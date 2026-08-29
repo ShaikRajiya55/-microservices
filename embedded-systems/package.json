@@ -1,0 +1,30 @@
+{
+  "name": "embedded-systems",
+  "version": "2.5.0",
+  "description": "NexOS Industrial Real-Time Embedded Systems & IoT Gateway Stack",
+  "main": "src/main.c",
+  "scripts": {
+    "build": "make all",
+    "start": "./nexos_app",
+    "test": "make test",
+    "clean": "make clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShaikRajiya55/embedded-systems.git"
+  },
+  "keywords": [
+    "embedded",
+    "rtos",
+    "iot",
+    "modbus",
+    "mqtt",
+    "firmware",
+    "dsp",
+    "security"
+  ],
+  "author": "ShaikRajiya55",
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -1,0 +1,4 @@
+{"request_id": "REQ-001", "numeric_features": {"amount": 240.0, "account_age_days": 150.0, "failed_logins_24h": 3.0}, "categorical_features": {"device_type": "bot_emulator", "country_code": "HIGH_RISK_ZONE", "payment_method": "crypto"}}
+{"request_id": "REQ-002", "numeric_features": {"amount": 50.0, "account_age_days": 600.0, "failed_logins_24h": 0.0}, "categorical_features": {"device_type": "desktop", "country_code": "US", "payment_method": "credit_card"}}
+{"request_id": "REQ-003", "numeric_features": {"amount": 120.0}, "categorical_features": {"device_type": "unknown_device", "country_code": "CA"}}
+{"request_id": "REQ-004", "numeric_features": {"amount": 500.0, "failed_logins_24h": 1.0}, "categorical_features": {"country_code": "HIGH_RISK_ZONE", "payment_method": "wire_transfer"}}
