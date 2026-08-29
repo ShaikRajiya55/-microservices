@@ -1,0 +1,27 @@
+name = "reconcile-rtl-ports-fastapi-redis"
+category = "Software Engineering"
+subcategory = "Hardware Systems & Web Services"
+tags = ["python", "fastapi", "redis", "sqlite", "verilog", "rtl", "checksum", "property-testing"]
+languages = ["python", "sql", "bash", "verilog"]
+difficulty = "frontier"
+expert_time_estimate_hours = 4
+artifacts = [
+    "/app/main.py",
+    "/app/run_service.sh",
+    "/app/data/design_db.sqlite",
+    "/app/data/picorv32-v1.0.tar.gz"
+]
+
+[verifier]
+timeout_sec = 1800
+environment_mode = "separate"
+
+[agent]
+timeout_sec = 5400
+
+[environment]
+network_mode = "public"
+build_timeout_sec = 900
+cpus = 2
+memory_mb = 8192
+storage_mb = 10240
