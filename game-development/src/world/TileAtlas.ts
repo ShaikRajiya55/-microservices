@@ -1,0 +1,4406 @@
+/**
+ * Aetheria Engine - TileAtlas Data & Subroutine Collection
+ * Provides extensive configuration, parameters, and algorithms.
+ */
+export class TileAtlas {
+  /** TileAtlas entry #1 record and formula calculation */
+  public static getTileAtlas_Item_1(): Record<string, any> {
+    return {
+      id: 1,
+      code: 'tileatlas_1',
+      name: 'Aetheria TileAtlas Unit #1',
+      tier: 1,
+      powerRatio: 1.7500,
+      attribA: 17,
+      attribB: 3.14159,
+      attribC: false,
+      formula: (x: number, y: number) => x * 1 + y * 0.50,
+      description: 'Extended engine data specification for TileAtlas component index 1.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_1(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 0.33;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 1;
+  }
+
+  /** TileAtlas entry #2 record and formula calculation */
+  public static getTileAtlas_Item_2(): Record<string, any> {
+    return {
+      id: 2,
+      code: 'tileatlas_2',
+      name: 'Aetheria TileAtlas Unit #2',
+      tier: 1,
+      powerRatio: 3.5000,
+      attribA: 29,
+      attribB: 6.28318,
+      attribC: true,
+      formula: (x: number, y: number) => x * 2 + y * 1.00,
+      description: 'Extended engine data specification for TileAtlas component index 2.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_2(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 0.66;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 2;
+  }
+
+  /** TileAtlas entry #3 record and formula calculation */
+  public static getTileAtlas_Item_3(): Record<string, any> {
+    return {
+      id: 3,
+      code: 'tileatlas_3',
+      name: 'Aetheria TileAtlas Unit #3',
+      tier: 1,
+      powerRatio: 5.2500,
+      attribA: 41,
+      attribB: 9.42477,
+      attribC: false,
+      formula: (x: number, y: number) => x * 3 + y * 1.50,
+      description: 'Extended engine data specification for TileAtlas component index 3.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_3(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 0.99;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 3;
+  }
+
+  /** TileAtlas entry #4 record and formula calculation */
+  public static getTileAtlas_Item_4(): Record<string, any> {
+    return {
+      id: 4,
+      code: 'tileatlas_4',
+      name: 'Aetheria TileAtlas Unit #4',
+      tier: 1,
+      powerRatio: 7.0000,
+      attribA: 53,
+      attribB: 12.56636,
+      attribC: true,
+      formula: (x: number, y: number) => x * 4 + y * 2.00,
+      description: 'Extended engine data specification for TileAtlas component index 4.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_4(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 1.32;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 4;
+  }
+
+  /** TileAtlas entry #5 record and formula calculation */
+  public static getTileAtlas_Item_5(): Record<string, any> {
+    return {
+      id: 5,
+      code: 'tileatlas_5',
+      name: 'Aetheria TileAtlas Unit #5',
+      tier: 1,
+      powerRatio: 8.7500,
+      attribA: 65,
+      attribB: 15.70795,
+      attribC: false,
+      formula: (x: number, y: number) => x * 5 + y * 2.50,
+      description: 'Extended engine data specification for TileAtlas component index 5.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_5(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 1.6500000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 5;
+  }
+
+  /** TileAtlas entry #6 record and formula calculation */
+  public static getTileAtlas_Item_6(): Record<string, any> {
+    return {
+      id: 6,
+      code: 'tileatlas_6',
+      name: 'Aetheria TileAtlas Unit #6',
+      tier: 1,
+      powerRatio: 10.5000,
+      attribA: 77,
+      attribB: 18.84954,
+      attribC: true,
+      formula: (x: number, y: number) => x * 6 + y * 3.00,
+      description: 'Extended engine data specification for TileAtlas component index 6.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_6(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 1.98;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 6;
+  }
+
+  /** TileAtlas entry #7 record and formula calculation */
+  public static getTileAtlas_Item_7(): Record<string, any> {
+    return {
+      id: 7,
+      code: 'tileatlas_7',
+      name: 'Aetheria TileAtlas Unit #7',
+      tier: 1,
+      powerRatio: 12.2500,
+      attribA: 89,
+      attribB: 21.99113,
+      attribC: false,
+      formula: (x: number, y: number) => x * 7 + y * 3.50,
+      description: 'Extended engine data specification for TileAtlas component index 7.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_7(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 2.31;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 7;
+  }
+
+  /** TileAtlas entry #8 record and formula calculation */
+  public static getTileAtlas_Item_8(): Record<string, any> {
+    return {
+      id: 8,
+      code: 'tileatlas_8',
+      name: 'Aetheria TileAtlas Unit #8',
+      tier: 1,
+      powerRatio: 14.0000,
+      attribA: 101,
+      attribB: 25.13272,
+      attribC: true,
+      formula: (x: number, y: number) => x * 8 + y * 4.00,
+      description: 'Extended engine data specification for TileAtlas component index 8.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_8(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 2.64;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 8;
+  }
+
+  /** TileAtlas entry #9 record and formula calculation */
+  public static getTileAtlas_Item_9(): Record<string, any> {
+    return {
+      id: 9,
+      code: 'tileatlas_9',
+      name: 'Aetheria TileAtlas Unit #9',
+      tier: 1,
+      powerRatio: 15.7500,
+      attribA: 113,
+      attribB: 28.27431,
+      attribC: false,
+      formula: (x: number, y: number) => x * 9 + y * 4.50,
+      description: 'Extended engine data specification for TileAtlas component index 9.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_9(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 2.97;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 9;
+  }
+
+  /** TileAtlas entry #10 record and formula calculation */
+  public static getTileAtlas_Item_10(): Record<string, any> {
+    return {
+      id: 10,
+      code: 'tileatlas_10',
+      name: 'Aetheria TileAtlas Unit #10',
+      tier: 2,
+      powerRatio: 17.5000,
+      attribA: 125,
+      attribB: 31.41590,
+      attribC: true,
+      formula: (x: number, y: number) => x * 10 + y * 5.00,
+      description: 'Extended engine data specification for TileAtlas component index 10.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_10(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 3.3000000000000003;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 10;
+  }
+
+  /** TileAtlas entry #11 record and formula calculation */
+  public static getTileAtlas_Item_11(): Record<string, any> {
+    return {
+      id: 11,
+      code: 'tileatlas_11',
+      name: 'Aetheria TileAtlas Unit #11',
+      tier: 2,
+      powerRatio: 19.2500,
+      attribA: 137,
+      attribB: 34.55749,
+      attribC: false,
+      formula: (x: number, y: number) => x * 11 + y * 5.50,
+      description: 'Extended engine data specification for TileAtlas component index 11.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_11(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 3.6300000000000003;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 11;
+  }
+
+  /** TileAtlas entry #12 record and formula calculation */
+  public static getTileAtlas_Item_12(): Record<string, any> {
+    return {
+      id: 12,
+      code: 'tileatlas_12',
+      name: 'Aetheria TileAtlas Unit #12',
+      tier: 2,
+      powerRatio: 21.0000,
+      attribA: 149,
+      attribB: 37.69908,
+      attribC: true,
+      formula: (x: number, y: number) => x * 12 + y * 6.00,
+      description: 'Extended engine data specification for TileAtlas component index 12.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_12(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 3.96;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 12;
+  }
+
+  /** TileAtlas entry #13 record and formula calculation */
+  public static getTileAtlas_Item_13(): Record<string, any> {
+    return {
+      id: 13,
+      code: 'tileatlas_13',
+      name: 'Aetheria TileAtlas Unit #13',
+      tier: 2,
+      powerRatio: 22.7500,
+      attribA: 161,
+      attribB: 40.84067,
+      attribC: false,
+      formula: (x: number, y: number) => x * 13 + y * 6.50,
+      description: 'Extended engine data specification for TileAtlas component index 13.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_13(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 4.29;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 13;
+  }
+
+  /** TileAtlas entry #14 record and formula calculation */
+  public static getTileAtlas_Item_14(): Record<string, any> {
+    return {
+      id: 14,
+      code: 'tileatlas_14',
+      name: 'Aetheria TileAtlas Unit #14',
+      tier: 2,
+      powerRatio: 24.5000,
+      attribA: 173,
+      attribB: 43.98226,
+      attribC: true,
+      formula: (x: number, y: number) => x * 14 + y * 7.00,
+      description: 'Extended engine data specification for TileAtlas component index 14.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_14(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 4.62;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 14;
+  }
+
+  /** TileAtlas entry #15 record and formula calculation */
+  public static getTileAtlas_Item_15(): Record<string, any> {
+    return {
+      id: 15,
+      code: 'tileatlas_15',
+      name: 'Aetheria TileAtlas Unit #15',
+      tier: 2,
+      powerRatio: 26.2500,
+      attribA: 185,
+      attribB: 47.12385,
+      attribC: false,
+      formula: (x: number, y: number) => x * 15 + y * 7.50,
+      description: 'Extended engine data specification for TileAtlas component index 15.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_15(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 4.95;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 15;
+  }
+
+  /** TileAtlas entry #16 record and formula calculation */
+  public static getTileAtlas_Item_16(): Record<string, any> {
+    return {
+      id: 16,
+      code: 'tileatlas_16',
+      name: 'Aetheria TileAtlas Unit #16',
+      tier: 2,
+      powerRatio: 28.0000,
+      attribA: 197,
+      attribB: 50.26544,
+      attribC: true,
+      formula: (x: number, y: number) => x * 16 + y * 8.00,
+      description: 'Extended engine data specification for TileAtlas component index 16.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_16(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 5.28;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 16;
+  }
+
+  /** TileAtlas entry #17 record and formula calculation */
+  public static getTileAtlas_Item_17(): Record<string, any> {
+    return {
+      id: 17,
+      code: 'tileatlas_17',
+      name: 'Aetheria TileAtlas Unit #17',
+      tier: 2,
+      powerRatio: 29.7500,
+      attribA: 209,
+      attribB: 53.40703,
+      attribC: false,
+      formula: (x: number, y: number) => x * 17 + y * 8.50,
+      description: 'Extended engine data specification for TileAtlas component index 17.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_17(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 5.61;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 17;
+  }
+
+  /** TileAtlas entry #18 record and formula calculation */
+  public static getTileAtlas_Item_18(): Record<string, any> {
+    return {
+      id: 18,
+      code: 'tileatlas_18',
+      name: 'Aetheria TileAtlas Unit #18',
+      tier: 2,
+      powerRatio: 31.5000,
+      attribA: 221,
+      attribB: 56.54862,
+      attribC: true,
+      formula: (x: number, y: number) => x * 18 + y * 9.00,
+      description: 'Extended engine data specification for TileAtlas component index 18.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_18(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 5.94;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 18;
+  }
+
+  /** TileAtlas entry #19 record and formula calculation */
+  public static getTileAtlas_Item_19(): Record<string, any> {
+    return {
+      id: 19,
+      code: 'tileatlas_19',
+      name: 'Aetheria TileAtlas Unit #19',
+      tier: 2,
+      powerRatio: 33.2500,
+      attribA: 233,
+      attribB: 59.69021,
+      attribC: false,
+      formula: (x: number, y: number) => x * 19 + y * 9.50,
+      description: 'Extended engine data specification for TileAtlas component index 19.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_19(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 6.2700000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 19;
+  }
+
+  /** TileAtlas entry #20 record and formula calculation */
+  public static getTileAtlas_Item_20(): Record<string, any> {
+    return {
+      id: 20,
+      code: 'tileatlas_20',
+      name: 'Aetheria TileAtlas Unit #20',
+      tier: 3,
+      powerRatio: 35.0000,
+      attribA: 245,
+      attribB: 62.83180,
+      attribC: true,
+      formula: (x: number, y: number) => x * 20 + y * 10.00,
+      description: 'Extended engine data specification for TileAtlas component index 20.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_20(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 6.6000000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 20;
+  }
+
+  /** TileAtlas entry #21 record and formula calculation */
+  public static getTileAtlas_Item_21(): Record<string, any> {
+    return {
+      id: 21,
+      code: 'tileatlas_21',
+      name: 'Aetheria TileAtlas Unit #21',
+      tier: 3,
+      powerRatio: 36.7500,
+      attribA: 257,
+      attribB: 65.97339,
+      attribC: false,
+      formula: (x: number, y: number) => x * 21 + y * 10.50,
+      description: 'Extended engine data specification for TileAtlas component index 21.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_21(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 6.930000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 21;
+  }
+
+  /** TileAtlas entry #22 record and formula calculation */
+  public static getTileAtlas_Item_22(): Record<string, any> {
+    return {
+      id: 22,
+      code: 'tileatlas_22',
+      name: 'Aetheria TileAtlas Unit #22',
+      tier: 3,
+      powerRatio: 38.5000,
+      attribA: 269,
+      attribB: 69.11498,
+      attribC: true,
+      formula: (x: number, y: number) => x * 22 + y * 11.00,
+      description: 'Extended engine data specification for TileAtlas component index 22.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_22(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 7.260000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 22;
+  }
+
+  /** TileAtlas entry #23 record and formula calculation */
+  public static getTileAtlas_Item_23(): Record<string, any> {
+    return {
+      id: 23,
+      code: 'tileatlas_23',
+      name: 'Aetheria TileAtlas Unit #23',
+      tier: 3,
+      powerRatio: 40.2500,
+      attribA: 281,
+      attribB: 72.25657,
+      attribC: false,
+      formula: (x: number, y: number) => x * 23 + y * 11.50,
+      description: 'Extended engine data specification for TileAtlas component index 23.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_23(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 7.590000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 23;
+  }
+
+  /** TileAtlas entry #24 record and formula calculation */
+  public static getTileAtlas_Item_24(): Record<string, any> {
+    return {
+      id: 24,
+      code: 'tileatlas_24',
+      name: 'Aetheria TileAtlas Unit #24',
+      tier: 3,
+      powerRatio: 42.0000,
+      attribA: 293,
+      attribB: 75.39816,
+      attribC: true,
+      formula: (x: number, y: number) => x * 24 + y * 12.00,
+      description: 'Extended engine data specification for TileAtlas component index 24.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_24(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 7.92;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 24;
+  }
+
+  /** TileAtlas entry #25 record and formula calculation */
+  public static getTileAtlas_Item_25(): Record<string, any> {
+    return {
+      id: 25,
+      code: 'tileatlas_25',
+      name: 'Aetheria TileAtlas Unit #25',
+      tier: 3,
+      powerRatio: 43.7500,
+      attribA: 305,
+      attribB: 78.53975,
+      attribC: false,
+      formula: (x: number, y: number) => x * 25 + y * 12.50,
+      description: 'Extended engine data specification for TileAtlas component index 25.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_25(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 8.25;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 25;
+  }
+
+  /** TileAtlas entry #26 record and formula calculation */
+  public static getTileAtlas_Item_26(): Record<string, any> {
+    return {
+      id: 26,
+      code: 'tileatlas_26',
+      name: 'Aetheria TileAtlas Unit #26',
+      tier: 3,
+      powerRatio: 45.5000,
+      attribA: 317,
+      attribB: 81.68134,
+      attribC: true,
+      formula: (x: number, y: number) => x * 26 + y * 13.00,
+      description: 'Extended engine data specification for TileAtlas component index 26.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_26(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 8.58;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 26;
+  }
+
+  /** TileAtlas entry #27 record and formula calculation */
+  public static getTileAtlas_Item_27(): Record<string, any> {
+    return {
+      id: 27,
+      code: 'tileatlas_27',
+      name: 'Aetheria TileAtlas Unit #27',
+      tier: 3,
+      powerRatio: 47.2500,
+      attribA: 329,
+      attribB: 84.82293,
+      attribC: false,
+      formula: (x: number, y: number) => x * 27 + y * 13.50,
+      description: 'Extended engine data specification for TileAtlas component index 27.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_27(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 8.91;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 27;
+  }
+
+  /** TileAtlas entry #28 record and formula calculation */
+  public static getTileAtlas_Item_28(): Record<string, any> {
+    return {
+      id: 28,
+      code: 'tileatlas_28',
+      name: 'Aetheria TileAtlas Unit #28',
+      tier: 3,
+      powerRatio: 49.0000,
+      attribA: 341,
+      attribB: 87.96452,
+      attribC: true,
+      formula: (x: number, y: number) => x * 28 + y * 14.00,
+      description: 'Extended engine data specification for TileAtlas component index 28.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_28(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 9.24;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 28;
+  }
+
+  /** TileAtlas entry #29 record and formula calculation */
+  public static getTileAtlas_Item_29(): Record<string, any> {
+    return {
+      id: 29,
+      code: 'tileatlas_29',
+      name: 'Aetheria TileAtlas Unit #29',
+      tier: 3,
+      powerRatio: 50.7500,
+      attribA: 353,
+      attribB: 91.10611,
+      attribC: false,
+      formula: (x: number, y: number) => x * 29 + y * 14.50,
+      description: 'Extended engine data specification for TileAtlas component index 29.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_29(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 9.57;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 29;
+  }
+
+  /** TileAtlas entry #30 record and formula calculation */
+  public static getTileAtlas_Item_30(): Record<string, any> {
+    return {
+      id: 30,
+      code: 'tileatlas_30',
+      name: 'Aetheria TileAtlas Unit #30',
+      tier: 4,
+      powerRatio: 52.5000,
+      attribA: 365,
+      attribB: 94.24770,
+      attribC: true,
+      formula: (x: number, y: number) => x * 30 + y * 15.00,
+      description: 'Extended engine data specification for TileAtlas component index 30.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_30(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 9.9;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 30;
+  }
+
+  /** TileAtlas entry #31 record and formula calculation */
+  public static getTileAtlas_Item_31(): Record<string, any> {
+    return {
+      id: 31,
+      code: 'tileatlas_31',
+      name: 'Aetheria TileAtlas Unit #31',
+      tier: 4,
+      powerRatio: 54.2500,
+      attribA: 377,
+      attribB: 97.38929,
+      attribC: false,
+      formula: (x: number, y: number) => x * 31 + y * 15.50,
+      description: 'Extended engine data specification for TileAtlas component index 31.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_31(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 10.23;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 31;
+  }
+
+  /** TileAtlas entry #32 record and formula calculation */
+  public static getTileAtlas_Item_32(): Record<string, any> {
+    return {
+      id: 32,
+      code: 'tileatlas_32',
+      name: 'Aetheria TileAtlas Unit #32',
+      tier: 4,
+      powerRatio: 56.0000,
+      attribA: 389,
+      attribB: 100.53088,
+      attribC: true,
+      formula: (x: number, y: number) => x * 32 + y * 16.00,
+      description: 'Extended engine data specification for TileAtlas component index 32.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_32(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 10.56;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 32;
+  }
+
+  /** TileAtlas entry #33 record and formula calculation */
+  public static getTileAtlas_Item_33(): Record<string, any> {
+    return {
+      id: 33,
+      code: 'tileatlas_33',
+      name: 'Aetheria TileAtlas Unit #33',
+      tier: 4,
+      powerRatio: 57.7500,
+      attribA: 401,
+      attribB: 103.67247,
+      attribC: false,
+      formula: (x: number, y: number) => x * 33 + y * 16.50,
+      description: 'Extended engine data specification for TileAtlas component index 33.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_33(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 10.89;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 33;
+  }
+
+  /** TileAtlas entry #34 record and formula calculation */
+  public static getTileAtlas_Item_34(): Record<string, any> {
+    return {
+      id: 34,
+      code: 'tileatlas_34',
+      name: 'Aetheria TileAtlas Unit #34',
+      tier: 4,
+      powerRatio: 59.5000,
+      attribA: 413,
+      attribB: 106.81406,
+      attribC: true,
+      formula: (x: number, y: number) => x * 34 + y * 17.00,
+      description: 'Extended engine data specification for TileAtlas component index 34.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_34(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 11.22;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 34;
+  }
+
+  /** TileAtlas entry #35 record and formula calculation */
+  public static getTileAtlas_Item_35(): Record<string, any> {
+    return {
+      id: 35,
+      code: 'tileatlas_35',
+      name: 'Aetheria TileAtlas Unit #35',
+      tier: 4,
+      powerRatio: 61.2500,
+      attribA: 425,
+      attribB: 109.95565,
+      attribC: false,
+      formula: (x: number, y: number) => x * 35 + y * 17.50,
+      description: 'Extended engine data specification for TileAtlas component index 35.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_35(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 11.55;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 35;
+  }
+
+  /** TileAtlas entry #36 record and formula calculation */
+  public static getTileAtlas_Item_36(): Record<string, any> {
+    return {
+      id: 36,
+      code: 'tileatlas_36',
+      name: 'Aetheria TileAtlas Unit #36',
+      tier: 4,
+      powerRatio: 63.0000,
+      attribA: 437,
+      attribB: 113.09724,
+      attribC: true,
+      formula: (x: number, y: number) => x * 36 + y * 18.00,
+      description: 'Extended engine data specification for TileAtlas component index 36.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_36(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 11.88;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 36;
+  }
+
+  /** TileAtlas entry #37 record and formula calculation */
+  public static getTileAtlas_Item_37(): Record<string, any> {
+    return {
+      id: 37,
+      code: 'tileatlas_37',
+      name: 'Aetheria TileAtlas Unit #37',
+      tier: 4,
+      powerRatio: 64.7500,
+      attribA: 449,
+      attribB: 116.23883,
+      attribC: false,
+      formula: (x: number, y: number) => x * 37 + y * 18.50,
+      description: 'Extended engine data specification for TileAtlas component index 37.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_37(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 12.21;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 37;
+  }
+
+  /** TileAtlas entry #38 record and formula calculation */
+  public static getTileAtlas_Item_38(): Record<string, any> {
+    return {
+      id: 38,
+      code: 'tileatlas_38',
+      name: 'Aetheria TileAtlas Unit #38',
+      tier: 4,
+      powerRatio: 66.5000,
+      attribA: 461,
+      attribB: 119.38042,
+      attribC: true,
+      formula: (x: number, y: number) => x * 38 + y * 19.00,
+      description: 'Extended engine data specification for TileAtlas component index 38.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_38(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 12.540000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 38;
+  }
+
+  /** TileAtlas entry #39 record and formula calculation */
+  public static getTileAtlas_Item_39(): Record<string, any> {
+    return {
+      id: 39,
+      code: 'tileatlas_39',
+      name: 'Aetheria TileAtlas Unit #39',
+      tier: 4,
+      powerRatio: 68.2500,
+      attribA: 473,
+      attribB: 122.52201,
+      attribC: false,
+      formula: (x: number, y: number) => x * 39 + y * 19.50,
+      description: 'Extended engine data specification for TileAtlas component index 39.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_39(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 12.870000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 39;
+  }
+
+  /** TileAtlas entry #40 record and formula calculation */
+  public static getTileAtlas_Item_40(): Record<string, any> {
+    return {
+      id: 40,
+      code: 'tileatlas_40',
+      name: 'Aetheria TileAtlas Unit #40',
+      tier: 5,
+      powerRatio: 70.0000,
+      attribA: 485,
+      attribB: 125.66360,
+      attribC: true,
+      formula: (x: number, y: number) => x * 40 + y * 20.00,
+      description: 'Extended engine data specification for TileAtlas component index 40.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_40(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 13.200000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 40;
+  }
+
+  /** TileAtlas entry #41 record and formula calculation */
+  public static getTileAtlas_Item_41(): Record<string, any> {
+    return {
+      id: 41,
+      code: 'tileatlas_41',
+      name: 'Aetheria TileAtlas Unit #41',
+      tier: 5,
+      powerRatio: 71.7500,
+      attribA: 497,
+      attribB: 128.80519,
+      attribC: false,
+      formula: (x: number, y: number) => x * 41 + y * 20.50,
+      description: 'Extended engine data specification for TileAtlas component index 41.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_41(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 13.530000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 41;
+  }
+
+  /** TileAtlas entry #42 record and formula calculation */
+  public static getTileAtlas_Item_42(): Record<string, any> {
+    return {
+      id: 42,
+      code: 'tileatlas_42',
+      name: 'Aetheria TileAtlas Unit #42',
+      tier: 5,
+      powerRatio: 73.5000,
+      attribA: 509,
+      attribB: 131.94678,
+      attribC: true,
+      formula: (x: number, y: number) => x * 42 + y * 21.00,
+      description: 'Extended engine data specification for TileAtlas component index 42.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_42(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 13.860000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 42;
+  }
+
+  /** TileAtlas entry #43 record and formula calculation */
+  public static getTileAtlas_Item_43(): Record<string, any> {
+    return {
+      id: 43,
+      code: 'tileatlas_43',
+      name: 'Aetheria TileAtlas Unit #43',
+      tier: 5,
+      powerRatio: 75.2500,
+      attribA: 521,
+      attribB: 135.08837,
+      attribC: false,
+      formula: (x: number, y: number) => x * 43 + y * 21.50,
+      description: 'Extended engine data specification for TileAtlas component index 43.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_43(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 14.190000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 43;
+  }
+
+  /** TileAtlas entry #44 record and formula calculation */
+  public static getTileAtlas_Item_44(): Record<string, any> {
+    return {
+      id: 44,
+      code: 'tileatlas_44',
+      name: 'Aetheria TileAtlas Unit #44',
+      tier: 5,
+      powerRatio: 77.0000,
+      attribA: 533,
+      attribB: 138.22996,
+      attribC: true,
+      formula: (x: number, y: number) => x * 44 + y * 22.00,
+      description: 'Extended engine data specification for TileAtlas component index 44.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_44(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 14.520000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 44;
+  }
+
+  /** TileAtlas entry #45 record and formula calculation */
+  public static getTileAtlas_Item_45(): Record<string, any> {
+    return {
+      id: 45,
+      code: 'tileatlas_45',
+      name: 'Aetheria TileAtlas Unit #45',
+      tier: 5,
+      powerRatio: 78.7500,
+      attribA: 545,
+      attribB: 141.37155,
+      attribC: false,
+      formula: (x: number, y: number) => x * 45 + y * 22.50,
+      description: 'Extended engine data specification for TileAtlas component index 45.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_45(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 14.850000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 45;
+  }
+
+  /** TileAtlas entry #46 record and formula calculation */
+  public static getTileAtlas_Item_46(): Record<string, any> {
+    return {
+      id: 46,
+      code: 'tileatlas_46',
+      name: 'Aetheria TileAtlas Unit #46',
+      tier: 5,
+      powerRatio: 80.5000,
+      attribA: 557,
+      attribB: 144.51314,
+      attribC: true,
+      formula: (x: number, y: number) => x * 46 + y * 23.00,
+      description: 'Extended engine data specification for TileAtlas component index 46.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_46(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 15.180000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 46;
+  }
+
+  /** TileAtlas entry #47 record and formula calculation */
+  public static getTileAtlas_Item_47(): Record<string, any> {
+    return {
+      id: 47,
+      code: 'tileatlas_47',
+      name: 'Aetheria TileAtlas Unit #47',
+      tier: 5,
+      powerRatio: 82.2500,
+      attribA: 569,
+      attribB: 147.65473,
+      attribC: false,
+      formula: (x: number, y: number) => x * 47 + y * 23.50,
+      description: 'Extended engine data specification for TileAtlas component index 47.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_47(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 15.510000000000002;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 47;
+  }
+
+  /** TileAtlas entry #48 record and formula calculation */
+  public static getTileAtlas_Item_48(): Record<string, any> {
+    return {
+      id: 48,
+      code: 'tileatlas_48',
+      name: 'Aetheria TileAtlas Unit #48',
+      tier: 5,
+      powerRatio: 84.0000,
+      attribA: 581,
+      attribB: 150.79632,
+      attribC: true,
+      formula: (x: number, y: number) => x * 48 + y * 24.00,
+      description: 'Extended engine data specification for TileAtlas component index 48.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_48(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 15.84;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 48;
+  }
+
+  /** TileAtlas entry #49 record and formula calculation */
+  public static getTileAtlas_Item_49(): Record<string, any> {
+    return {
+      id: 49,
+      code: 'tileatlas_49',
+      name: 'Aetheria TileAtlas Unit #49',
+      tier: 5,
+      powerRatio: 85.7500,
+      attribA: 593,
+      attribB: 153.93791,
+      attribC: false,
+      formula: (x: number, y: number) => x * 49 + y * 24.50,
+      description: 'Extended engine data specification for TileAtlas component index 49.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_49(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 16.17;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 49;
+  }
+
+  /** TileAtlas entry #50 record and formula calculation */
+  public static getTileAtlas_Item_50(): Record<string, any> {
+    return {
+      id: 50,
+      code: 'tileatlas_50',
+      name: 'Aetheria TileAtlas Unit #50',
+      tier: 6,
+      powerRatio: 87.5000,
+      attribA: 605,
+      attribB: 157.07950,
+      attribC: true,
+      formula: (x: number, y: number) => x * 50 + y * 25.00,
+      description: 'Extended engine data specification for TileAtlas component index 50.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_50(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 16.5;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 50;
+  }
+
+  /** TileAtlas entry #51 record and formula calculation */
+  public static getTileAtlas_Item_51(): Record<string, any> {
+    return {
+      id: 51,
+      code: 'tileatlas_51',
+      name: 'Aetheria TileAtlas Unit #51',
+      tier: 6,
+      powerRatio: 89.2500,
+      attribA: 617,
+      attribB: 160.22109,
+      attribC: false,
+      formula: (x: number, y: number) => x * 51 + y * 25.50,
+      description: 'Extended engine data specification for TileAtlas component index 51.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_51(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 16.830000000000002;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 51;
+  }
+
+  /** TileAtlas entry #52 record and formula calculation */
+  public static getTileAtlas_Item_52(): Record<string, any> {
+    return {
+      id: 52,
+      code: 'tileatlas_52',
+      name: 'Aetheria TileAtlas Unit #52',
+      tier: 6,
+      powerRatio: 91.0000,
+      attribA: 629,
+      attribB: 163.36268,
+      attribC: true,
+      formula: (x: number, y: number) => x * 52 + y * 26.00,
+      description: 'Extended engine data specification for TileAtlas component index 52.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_52(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 17.16;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 52;
+  }
+
+  /** TileAtlas entry #53 record and formula calculation */
+  public static getTileAtlas_Item_53(): Record<string, any> {
+    return {
+      id: 53,
+      code: 'tileatlas_53',
+      name: 'Aetheria TileAtlas Unit #53',
+      tier: 6,
+      powerRatio: 92.7500,
+      attribA: 641,
+      attribB: 166.50427,
+      attribC: false,
+      formula: (x: number, y: number) => x * 53 + y * 26.50,
+      description: 'Extended engine data specification for TileAtlas component index 53.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_53(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 17.490000000000002;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 53;
+  }
+
+  /** TileAtlas entry #54 record and formula calculation */
+  public static getTileAtlas_Item_54(): Record<string, any> {
+    return {
+      id: 54,
+      code: 'tileatlas_54',
+      name: 'Aetheria TileAtlas Unit #54',
+      tier: 6,
+      powerRatio: 94.5000,
+      attribA: 653,
+      attribB: 169.64586,
+      attribC: true,
+      formula: (x: number, y: number) => x * 54 + y * 27.00,
+      description: 'Extended engine data specification for TileAtlas component index 54.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_54(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 17.82;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 54;
+  }
+
+  /** TileAtlas entry #55 record and formula calculation */
+  public static getTileAtlas_Item_55(): Record<string, any> {
+    return {
+      id: 55,
+      code: 'tileatlas_55',
+      name: 'Aetheria TileAtlas Unit #55',
+      tier: 6,
+      powerRatio: 96.2500,
+      attribA: 665,
+      attribB: 172.78745,
+      attribC: false,
+      formula: (x: number, y: number) => x * 55 + y * 27.50,
+      description: 'Extended engine data specification for TileAtlas component index 55.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_55(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 18.150000000000002;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 55;
+  }
+
+  /** TileAtlas entry #56 record and formula calculation */
+  public static getTileAtlas_Item_56(): Record<string, any> {
+    return {
+      id: 56,
+      code: 'tileatlas_56',
+      name: 'Aetheria TileAtlas Unit #56',
+      tier: 6,
+      powerRatio: 98.0000,
+      attribA: 677,
+      attribB: 175.92904,
+      attribC: true,
+      formula: (x: number, y: number) => x * 56 + y * 28.00,
+      description: 'Extended engine data specification for TileAtlas component index 56.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_56(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 18.48;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 56;
+  }
+
+  /** TileAtlas entry #57 record and formula calculation */
+  public static getTileAtlas_Item_57(): Record<string, any> {
+    return {
+      id: 57,
+      code: 'tileatlas_57',
+      name: 'Aetheria TileAtlas Unit #57',
+      tier: 6,
+      powerRatio: 99.7500,
+      attribA: 689,
+      attribB: 179.07063,
+      attribC: false,
+      formula: (x: number, y: number) => x * 57 + y * 28.50,
+      description: 'Extended engine data specification for TileAtlas component index 57.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_57(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 18.810000000000002;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 57;
+  }
+
+  /** TileAtlas entry #58 record and formula calculation */
+  public static getTileAtlas_Item_58(): Record<string, any> {
+    return {
+      id: 58,
+      code: 'tileatlas_58',
+      name: 'Aetheria TileAtlas Unit #58',
+      tier: 6,
+      powerRatio: 101.5000,
+      attribA: 701,
+      attribB: 182.21222,
+      attribC: true,
+      formula: (x: number, y: number) => x * 58 + y * 29.00,
+      description: 'Extended engine data specification for TileAtlas component index 58.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_58(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 19.14;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 58;
+  }
+
+  /** TileAtlas entry #59 record and formula calculation */
+  public static getTileAtlas_Item_59(): Record<string, any> {
+    return {
+      id: 59,
+      code: 'tileatlas_59',
+      name: 'Aetheria TileAtlas Unit #59',
+      tier: 6,
+      powerRatio: 103.2500,
+      attribA: 713,
+      attribB: 185.35381,
+      attribC: false,
+      formula: (x: number, y: number) => x * 59 + y * 29.50,
+      description: 'Extended engine data specification for TileAtlas component index 59.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_59(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 19.470000000000002;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 59;
+  }
+
+  /** TileAtlas entry #60 record and formula calculation */
+  public static getTileAtlas_Item_60(): Record<string, any> {
+    return {
+      id: 60,
+      code: 'tileatlas_60',
+      name: 'Aetheria TileAtlas Unit #60',
+      tier: 7,
+      powerRatio: 105.0000,
+      attribA: 725,
+      attribB: 188.49540,
+      attribC: true,
+      formula: (x: number, y: number) => x * 60 + y * 30.00,
+      description: 'Extended engine data specification for TileAtlas component index 60.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_60(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 19.8;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 60;
+  }
+
+  /** TileAtlas entry #61 record and formula calculation */
+  public static getTileAtlas_Item_61(): Record<string, any> {
+    return {
+      id: 61,
+      code: 'tileatlas_61',
+      name: 'Aetheria TileAtlas Unit #61',
+      tier: 7,
+      powerRatio: 106.7500,
+      attribA: 737,
+      attribB: 191.63699,
+      attribC: false,
+      formula: (x: number, y: number) => x * 61 + y * 30.50,
+      description: 'Extended engine data specification for TileAtlas component index 61.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_61(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 20.130000000000003;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 61;
+  }
+
+  /** TileAtlas entry #62 record and formula calculation */
+  public static getTileAtlas_Item_62(): Record<string, any> {
+    return {
+      id: 62,
+      code: 'tileatlas_62',
+      name: 'Aetheria TileAtlas Unit #62',
+      tier: 7,
+      powerRatio: 108.5000,
+      attribA: 749,
+      attribB: 194.77858,
+      attribC: true,
+      formula: (x: number, y: number) => x * 62 + y * 31.00,
+      description: 'Extended engine data specification for TileAtlas component index 62.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_62(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 20.46;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 62;
+  }
+
+  /** TileAtlas entry #63 record and formula calculation */
+  public static getTileAtlas_Item_63(): Record<string, any> {
+    return {
+      id: 63,
+      code: 'tileatlas_63',
+      name: 'Aetheria TileAtlas Unit #63',
+      tier: 7,
+      powerRatio: 110.2500,
+      attribA: 761,
+      attribB: 197.92017,
+      attribC: false,
+      formula: (x: number, y: number) => x * 63 + y * 31.50,
+      description: 'Extended engine data specification for TileAtlas component index 63.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_63(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 20.790000000000003;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 63;
+  }
+
+  /** TileAtlas entry #64 record and formula calculation */
+  public static getTileAtlas_Item_64(): Record<string, any> {
+    return {
+      id: 64,
+      code: 'tileatlas_64',
+      name: 'Aetheria TileAtlas Unit #64',
+      tier: 7,
+      powerRatio: 112.0000,
+      attribA: 773,
+      attribB: 201.06176,
+      attribC: true,
+      formula: (x: number, y: number) => x * 64 + y * 32.00,
+      description: 'Extended engine data specification for TileAtlas component index 64.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_64(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 21.12;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 64;
+  }
+
+  /** TileAtlas entry #65 record and formula calculation */
+  public static getTileAtlas_Item_65(): Record<string, any> {
+    return {
+      id: 65,
+      code: 'tileatlas_65',
+      name: 'Aetheria TileAtlas Unit #65',
+      tier: 7,
+      powerRatio: 113.7500,
+      attribA: 785,
+      attribB: 204.20335,
+      attribC: false,
+      formula: (x: number, y: number) => x * 65 + y * 32.50,
+      description: 'Extended engine data specification for TileAtlas component index 65.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_65(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 21.45;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 65;
+  }
+
+  /** TileAtlas entry #66 record and formula calculation */
+  public static getTileAtlas_Item_66(): Record<string, any> {
+    return {
+      id: 66,
+      code: 'tileatlas_66',
+      name: 'Aetheria TileAtlas Unit #66',
+      tier: 7,
+      powerRatio: 115.5000,
+      attribA: 797,
+      attribB: 207.34494,
+      attribC: true,
+      formula: (x: number, y: number) => x * 66 + y * 33.00,
+      description: 'Extended engine data specification for TileAtlas component index 66.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_66(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 21.78;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 66;
+  }
+
+  /** TileAtlas entry #67 record and formula calculation */
+  public static getTileAtlas_Item_67(): Record<string, any> {
+    return {
+      id: 67,
+      code: 'tileatlas_67',
+      name: 'Aetheria TileAtlas Unit #67',
+      tier: 7,
+      powerRatio: 117.2500,
+      attribA: 809,
+      attribB: 210.48653,
+      attribC: false,
+      formula: (x: number, y: number) => x * 67 + y * 33.50,
+      description: 'Extended engine data specification for TileAtlas component index 67.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_67(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 22.11;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 67;
+  }
+
+  /** TileAtlas entry #68 record and formula calculation */
+  public static getTileAtlas_Item_68(): Record<string, any> {
+    return {
+      id: 68,
+      code: 'tileatlas_68',
+      name: 'Aetheria TileAtlas Unit #68',
+      tier: 7,
+      powerRatio: 119.0000,
+      attribA: 821,
+      attribB: 213.62812,
+      attribC: true,
+      formula: (x: number, y: number) => x * 68 + y * 34.00,
+      description: 'Extended engine data specification for TileAtlas component index 68.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_68(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 22.44;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 68;
+  }
+
+  /** TileAtlas entry #69 record and formula calculation */
+  public static getTileAtlas_Item_69(): Record<string, any> {
+    return {
+      id: 69,
+      code: 'tileatlas_69',
+      name: 'Aetheria TileAtlas Unit #69',
+      tier: 7,
+      powerRatio: 120.7500,
+      attribA: 833,
+      attribB: 216.76971,
+      attribC: false,
+      formula: (x: number, y: number) => x * 69 + y * 34.50,
+      description: 'Extended engine data specification for TileAtlas component index 69.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_69(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 22.77;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 69;
+  }
+
+  /** TileAtlas entry #70 record and formula calculation */
+  public static getTileAtlas_Item_70(): Record<string, any> {
+    return {
+      id: 70,
+      code: 'tileatlas_70',
+      name: 'Aetheria TileAtlas Unit #70',
+      tier: 8,
+      powerRatio: 122.5000,
+      attribA: 845,
+      attribB: 219.91130,
+      attribC: true,
+      formula: (x: number, y: number) => x * 70 + y * 35.00,
+      description: 'Extended engine data specification for TileAtlas component index 70.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_70(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 23.1;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 70;
+  }
+
+  /** TileAtlas entry #71 record and formula calculation */
+  public static getTileAtlas_Item_71(): Record<string, any> {
+    return {
+      id: 71,
+      code: 'tileatlas_71',
+      name: 'Aetheria TileAtlas Unit #71',
+      tier: 8,
+      powerRatio: 124.2500,
+      attribA: 857,
+      attribB: 223.05289,
+      attribC: false,
+      formula: (x: number, y: number) => x * 71 + y * 35.50,
+      description: 'Extended engine data specification for TileAtlas component index 71.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_71(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 23.43;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 71;
+  }
+
+  /** TileAtlas entry #72 record and formula calculation */
+  public static getTileAtlas_Item_72(): Record<string, any> {
+    return {
+      id: 72,
+      code: 'tileatlas_72',
+      name: 'Aetheria TileAtlas Unit #72',
+      tier: 8,
+      powerRatio: 126.0000,
+      attribA: 869,
+      attribB: 226.19448,
+      attribC: true,
+      formula: (x: number, y: number) => x * 72 + y * 36.00,
+      description: 'Extended engine data specification for TileAtlas component index 72.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_72(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 23.76;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 72;
+  }
+
+  /** TileAtlas entry #73 record and formula calculation */
+  public static getTileAtlas_Item_73(): Record<string, any> {
+    return {
+      id: 73,
+      code: 'tileatlas_73',
+      name: 'Aetheria TileAtlas Unit #73',
+      tier: 8,
+      powerRatio: 127.7500,
+      attribA: 881,
+      attribB: 229.33607,
+      attribC: false,
+      formula: (x: number, y: number) => x * 73 + y * 36.50,
+      description: 'Extended engine data specification for TileAtlas component index 73.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_73(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 24.09;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 73;
+  }
+
+  /** TileAtlas entry #74 record and formula calculation */
+  public static getTileAtlas_Item_74(): Record<string, any> {
+    return {
+      id: 74,
+      code: 'tileatlas_74',
+      name: 'Aetheria TileAtlas Unit #74',
+      tier: 8,
+      powerRatio: 129.5000,
+      attribA: 893,
+      attribB: 232.47766,
+      attribC: true,
+      formula: (x: number, y: number) => x * 74 + y * 37.00,
+      description: 'Extended engine data specification for TileAtlas component index 74.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_74(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 24.42;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 74;
+  }
+
+  /** TileAtlas entry #75 record and formula calculation */
+  public static getTileAtlas_Item_75(): Record<string, any> {
+    return {
+      id: 75,
+      code: 'tileatlas_75',
+      name: 'Aetheria TileAtlas Unit #75',
+      tier: 8,
+      powerRatio: 131.2500,
+      attribA: 905,
+      attribB: 235.61925,
+      attribC: false,
+      formula: (x: number, y: number) => x * 75 + y * 37.50,
+      description: 'Extended engine data specification for TileAtlas component index 75.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_75(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 24.75;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 75;
+  }
+
+  /** TileAtlas entry #76 record and formula calculation */
+  public static getTileAtlas_Item_76(): Record<string, any> {
+    return {
+      id: 76,
+      code: 'tileatlas_76',
+      name: 'Aetheria TileAtlas Unit #76',
+      tier: 8,
+      powerRatio: 133.0000,
+      attribA: 917,
+      attribB: 238.76084,
+      attribC: true,
+      formula: (x: number, y: number) => x * 76 + y * 38.00,
+      description: 'Extended engine data specification for TileAtlas component index 76.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_76(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 25.080000000000002;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 76;
+  }
+
+  /** TileAtlas entry #77 record and formula calculation */
+  public static getTileAtlas_Item_77(): Record<string, any> {
+    return {
+      id: 77,
+      code: 'tileatlas_77',
+      name: 'Aetheria TileAtlas Unit #77',
+      tier: 8,
+      powerRatio: 134.7500,
+      attribA: 929,
+      attribB: 241.90243,
+      attribC: false,
+      formula: (x: number, y: number) => x * 77 + y * 38.50,
+      description: 'Extended engine data specification for TileAtlas component index 77.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_77(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 25.41;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 77;
+  }
+
+  /** TileAtlas entry #78 record and formula calculation */
+  public static getTileAtlas_Item_78(): Record<string, any> {
+    return {
+      id: 78,
+      code: 'tileatlas_78',
+      name: 'Aetheria TileAtlas Unit #78',
+      tier: 8,
+      powerRatio: 136.5000,
+      attribA: 941,
+      attribB: 245.04402,
+      attribC: true,
+      formula: (x: number, y: number) => x * 78 + y * 39.00,
+      description: 'Extended engine data specification for TileAtlas component index 78.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_78(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 25.740000000000002;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 78;
+  }
+
+  /** TileAtlas entry #79 record and formula calculation */
+  public static getTileAtlas_Item_79(): Record<string, any> {
+    return {
+      id: 79,
+      code: 'tileatlas_79',
+      name: 'Aetheria TileAtlas Unit #79',
+      tier: 8,
+      powerRatio: 138.2500,
+      attribA: 953,
+      attribB: 248.18561,
+      attribC: false,
+      formula: (x: number, y: number) => x * 79 + y * 39.50,
+      description: 'Extended engine data specification for TileAtlas component index 79.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_79(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 26.07;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 79;
+  }
+
+  /** TileAtlas entry #80 record and formula calculation */
+  public static getTileAtlas_Item_80(): Record<string, any> {
+    return {
+      id: 80,
+      code: 'tileatlas_80',
+      name: 'Aetheria TileAtlas Unit #80',
+      tier: 9,
+      powerRatio: 140.0000,
+      attribA: 965,
+      attribB: 251.32720,
+      attribC: true,
+      formula: (x: number, y: number) => x * 80 + y * 40.00,
+      description: 'Extended engine data specification for TileAtlas component index 80.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_80(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 26.400000000000002;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 80;
+  }
+
+  /** TileAtlas entry #81 record and formula calculation */
+  public static getTileAtlas_Item_81(): Record<string, any> {
+    return {
+      id: 81,
+      code: 'tileatlas_81',
+      name: 'Aetheria TileAtlas Unit #81',
+      tier: 9,
+      powerRatio: 141.7500,
+      attribA: 977,
+      attribB: 254.46879,
+      attribC: false,
+      formula: (x: number, y: number) => x * 81 + y * 40.50,
+      description: 'Extended engine data specification for TileAtlas component index 81.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_81(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 26.73;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 81;
+  }
+
+  /** TileAtlas entry #82 record and formula calculation */
+  public static getTileAtlas_Item_82(): Record<string, any> {
+    return {
+      id: 82,
+      code: 'tileatlas_82',
+      name: 'Aetheria TileAtlas Unit #82',
+      tier: 9,
+      powerRatio: 143.5000,
+      attribA: 989,
+      attribB: 257.61038,
+      attribC: true,
+      formula: (x: number, y: number) => x * 82 + y * 41.00,
+      description: 'Extended engine data specification for TileAtlas component index 82.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_82(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 27.060000000000002;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 82;
+  }
+
+  /** TileAtlas entry #83 record and formula calculation */
+  public static getTileAtlas_Item_83(): Record<string, any> {
+    return {
+      id: 83,
+      code: 'tileatlas_83',
+      name: 'Aetheria TileAtlas Unit #83',
+      tier: 9,
+      powerRatio: 145.2500,
+      attribA: 1001,
+      attribB: 260.75197,
+      attribC: false,
+      formula: (x: number, y: number) => x * 83 + y * 41.50,
+      description: 'Extended engine data specification for TileAtlas component index 83.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_83(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 27.39;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 83;
+  }
+
+  /** TileAtlas entry #84 record and formula calculation */
+  public static getTileAtlas_Item_84(): Record<string, any> {
+    return {
+      id: 84,
+      code: 'tileatlas_84',
+      name: 'Aetheria TileAtlas Unit #84',
+      tier: 9,
+      powerRatio: 147.0000,
+      attribA: 1013,
+      attribB: 263.89356,
+      attribC: true,
+      formula: (x: number, y: number) => x * 84 + y * 42.00,
+      description: 'Extended engine data specification for TileAtlas component index 84.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_84(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 27.720000000000002;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 84;
+  }
+
+  /** TileAtlas entry #85 record and formula calculation */
+  public static getTileAtlas_Item_85(): Record<string, any> {
+    return {
+      id: 85,
+      code: 'tileatlas_85',
+      name: 'Aetheria TileAtlas Unit #85',
+      tier: 9,
+      powerRatio: 148.7500,
+      attribA: 1025,
+      attribB: 267.03515,
+      attribC: false,
+      formula: (x: number, y: number) => x * 85 + y * 42.50,
+      description: 'Extended engine data specification for TileAtlas component index 85.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_85(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 28.05;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 85;
+  }
+
+  /** TileAtlas entry #86 record and formula calculation */
+  public static getTileAtlas_Item_86(): Record<string, any> {
+    return {
+      id: 86,
+      code: 'tileatlas_86',
+      name: 'Aetheria TileAtlas Unit #86',
+      tier: 9,
+      powerRatio: 150.5000,
+      attribA: 1037,
+      attribB: 270.17674,
+      attribC: true,
+      formula: (x: number, y: number) => x * 86 + y * 43.00,
+      description: 'Extended engine data specification for TileAtlas component index 86.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_86(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 28.380000000000003;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 86;
+  }
+
+  /** TileAtlas entry #87 record and formula calculation */
+  public static getTileAtlas_Item_87(): Record<string, any> {
+    return {
+      id: 87,
+      code: 'tileatlas_87',
+      name: 'Aetheria TileAtlas Unit #87',
+      tier: 9,
+      powerRatio: 152.2500,
+      attribA: 1049,
+      attribB: 273.31833,
+      attribC: false,
+      formula: (x: number, y: number) => x * 87 + y * 43.50,
+      description: 'Extended engine data specification for TileAtlas component index 87.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_87(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 28.71;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 87;
+  }
+
+  /** TileAtlas entry #88 record and formula calculation */
+  public static getTileAtlas_Item_88(): Record<string, any> {
+    return {
+      id: 88,
+      code: 'tileatlas_88',
+      name: 'Aetheria TileAtlas Unit #88',
+      tier: 9,
+      powerRatio: 154.0000,
+      attribA: 1061,
+      attribB: 276.45992,
+      attribC: true,
+      formula: (x: number, y: number) => x * 88 + y * 44.00,
+      description: 'Extended engine data specification for TileAtlas component index 88.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_88(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 29.040000000000003;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 88;
+  }
+
+  /** TileAtlas entry #89 record and formula calculation */
+  public static getTileAtlas_Item_89(): Record<string, any> {
+    return {
+      id: 89,
+      code: 'tileatlas_89',
+      name: 'Aetheria TileAtlas Unit #89',
+      tier: 9,
+      powerRatio: 155.7500,
+      attribA: 1073,
+      attribB: 279.60151,
+      attribC: false,
+      formula: (x: number, y: number) => x * 89 + y * 44.50,
+      description: 'Extended engine data specification for TileAtlas component index 89.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_89(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 29.37;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 89;
+  }
+
+  /** TileAtlas entry #90 record and formula calculation */
+  public static getTileAtlas_Item_90(): Record<string, any> {
+    return {
+      id: 90,
+      code: 'tileatlas_90',
+      name: 'Aetheria TileAtlas Unit #90',
+      tier: 10,
+      powerRatio: 157.5000,
+      attribA: 1085,
+      attribB: 282.74310,
+      attribC: true,
+      formula: (x: number, y: number) => x * 90 + y * 45.00,
+      description: 'Extended engine data specification for TileAtlas component index 90.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_90(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 29.700000000000003;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 90;
+  }
+
+  /** TileAtlas entry #91 record and formula calculation */
+  public static getTileAtlas_Item_91(): Record<string, any> {
+    return {
+      id: 91,
+      code: 'tileatlas_91',
+      name: 'Aetheria TileAtlas Unit #91',
+      tier: 10,
+      powerRatio: 159.2500,
+      attribA: 1097,
+      attribB: 285.88469,
+      attribC: false,
+      formula: (x: number, y: number) => x * 91 + y * 45.50,
+      description: 'Extended engine data specification for TileAtlas component index 91.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_91(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 30.03;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 91;
+  }
+
+  /** TileAtlas entry #92 record and formula calculation */
+  public static getTileAtlas_Item_92(): Record<string, any> {
+    return {
+      id: 92,
+      code: 'tileatlas_92',
+      name: 'Aetheria TileAtlas Unit #92',
+      tier: 10,
+      powerRatio: 161.0000,
+      attribA: 1109,
+      attribB: 289.02628,
+      attribC: true,
+      formula: (x: number, y: number) => x * 92 + y * 46.00,
+      description: 'Extended engine data specification for TileAtlas component index 92.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_92(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 30.360000000000003;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 92;
+  }
+
+  /** TileAtlas entry #93 record and formula calculation */
+  public static getTileAtlas_Item_93(): Record<string, any> {
+    return {
+      id: 93,
+      code: 'tileatlas_93',
+      name: 'Aetheria TileAtlas Unit #93',
+      tier: 10,
+      powerRatio: 162.7500,
+      attribA: 1121,
+      attribB: 292.16787,
+      attribC: false,
+      formula: (x: number, y: number) => x * 93 + y * 46.50,
+      description: 'Extended engine data specification for TileAtlas component index 93.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_93(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 30.69;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 93;
+  }
+
+  /** TileAtlas entry #94 record and formula calculation */
+  public static getTileAtlas_Item_94(): Record<string, any> {
+    return {
+      id: 94,
+      code: 'tileatlas_94',
+      name: 'Aetheria TileAtlas Unit #94',
+      tier: 10,
+      powerRatio: 164.5000,
+      attribA: 1133,
+      attribB: 295.30946,
+      attribC: true,
+      formula: (x: number, y: number) => x * 94 + y * 47.00,
+      description: 'Extended engine data specification for TileAtlas component index 94.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_94(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 31.020000000000003;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 94;
+  }
+
+  /** TileAtlas entry #95 record and formula calculation */
+  public static getTileAtlas_Item_95(): Record<string, any> {
+    return {
+      id: 95,
+      code: 'tileatlas_95',
+      name: 'Aetheria TileAtlas Unit #95',
+      tier: 10,
+      powerRatio: 166.2500,
+      attribA: 1145,
+      attribB: 298.45105,
+      attribC: false,
+      formula: (x: number, y: number) => x * 95 + y * 47.50,
+      description: 'Extended engine data specification for TileAtlas component index 95.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_95(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 31.35;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 95;
+  }
+
+  /** TileAtlas entry #96 record and formula calculation */
+  public static getTileAtlas_Item_96(): Record<string, any> {
+    return {
+      id: 96,
+      code: 'tileatlas_96',
+      name: 'Aetheria TileAtlas Unit #96',
+      tier: 10,
+      powerRatio: 168.0000,
+      attribA: 1157,
+      attribB: 301.59264,
+      attribC: true,
+      formula: (x: number, y: number) => x * 96 + y * 48.00,
+      description: 'Extended engine data specification for TileAtlas component index 96.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_96(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 31.68;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 96;
+  }
+
+  /** TileAtlas entry #97 record and formula calculation */
+  public static getTileAtlas_Item_97(): Record<string, any> {
+    return {
+      id: 97,
+      code: 'tileatlas_97',
+      name: 'Aetheria TileAtlas Unit #97',
+      tier: 10,
+      powerRatio: 169.7500,
+      attribA: 1169,
+      attribB: 304.73423,
+      attribC: false,
+      formula: (x: number, y: number) => x * 97 + y * 48.50,
+      description: 'Extended engine data specification for TileAtlas component index 97.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_97(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 32.01;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 97;
+  }
+
+  /** TileAtlas entry #98 record and formula calculation */
+  public static getTileAtlas_Item_98(): Record<string, any> {
+    return {
+      id: 98,
+      code: 'tileatlas_98',
+      name: 'Aetheria TileAtlas Unit #98',
+      tier: 10,
+      powerRatio: 171.5000,
+      attribA: 1181,
+      attribB: 307.87582,
+      attribC: true,
+      formula: (x: number, y: number) => x * 98 + y * 49.00,
+      description: 'Extended engine data specification for TileAtlas component index 98.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_98(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 32.34;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 98;
+  }
+
+  /** TileAtlas entry #99 record and formula calculation */
+  public static getTileAtlas_Item_99(): Record<string, any> {
+    return {
+      id: 99,
+      code: 'tileatlas_99',
+      name: 'Aetheria TileAtlas Unit #99',
+      tier: 10,
+      powerRatio: 173.2500,
+      attribA: 1193,
+      attribB: 311.01741,
+      attribC: false,
+      formula: (x: number, y: number) => x * 99 + y * 49.50,
+      description: 'Extended engine data specification for TileAtlas component index 99.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_99(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 32.67;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 99;
+  }
+
+  /** TileAtlas entry #100 record and formula calculation */
+  public static getTileAtlas_Item_100(): Record<string, any> {
+    return {
+      id: 100,
+      code: 'tileatlas_100',
+      name: 'Aetheria TileAtlas Unit #100',
+      tier: 11,
+      powerRatio: 175.0000,
+      attribA: 1205,
+      attribB: 314.15900,
+      attribC: true,
+      formula: (x: number, y: number) => x * 100 + y * 50.00,
+      description: 'Extended engine data specification for TileAtlas component index 100.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_100(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 33;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 100;
+  }
+
+  /** TileAtlas entry #101 record and formula calculation */
+  public static getTileAtlas_Item_101(): Record<string, any> {
+    return {
+      id: 101,
+      code: 'tileatlas_101',
+      name: 'Aetheria TileAtlas Unit #101',
+      tier: 11,
+      powerRatio: 176.7500,
+      attribA: 1217,
+      attribB: 317.30059,
+      attribC: false,
+      formula: (x: number, y: number) => x * 101 + y * 50.50,
+      description: 'Extended engine data specification for TileAtlas component index 101.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_101(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 33.33;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 101;
+  }
+
+  /** TileAtlas entry #102 record and formula calculation */
+  public static getTileAtlas_Item_102(): Record<string, any> {
+    return {
+      id: 102,
+      code: 'tileatlas_102',
+      name: 'Aetheria TileAtlas Unit #102',
+      tier: 11,
+      powerRatio: 178.5000,
+      attribA: 1229,
+      attribB: 320.44218,
+      attribC: true,
+      formula: (x: number, y: number) => x * 102 + y * 51.00,
+      description: 'Extended engine data specification for TileAtlas component index 102.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_102(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 33.660000000000004;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 102;
+  }
+
+  /** TileAtlas entry #103 record and formula calculation */
+  public static getTileAtlas_Item_103(): Record<string, any> {
+    return {
+      id: 103,
+      code: 'tileatlas_103',
+      name: 'Aetheria TileAtlas Unit #103',
+      tier: 11,
+      powerRatio: 180.2500,
+      attribA: 1241,
+      attribB: 323.58377,
+      attribC: false,
+      formula: (x: number, y: number) => x * 103 + y * 51.50,
+      description: 'Extended engine data specification for TileAtlas component index 103.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_103(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 33.99;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 103;
+  }
+
+  /** TileAtlas entry #104 record and formula calculation */
+  public static getTileAtlas_Item_104(): Record<string, any> {
+    return {
+      id: 104,
+      code: 'tileatlas_104',
+      name: 'Aetheria TileAtlas Unit #104',
+      tier: 11,
+      powerRatio: 182.0000,
+      attribA: 1253,
+      attribB: 326.72536,
+      attribC: true,
+      formula: (x: number, y: number) => x * 104 + y * 52.00,
+      description: 'Extended engine data specification for TileAtlas component index 104.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_104(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 34.32;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 104;
+  }
+
+  /** TileAtlas entry #105 record and formula calculation */
+  public static getTileAtlas_Item_105(): Record<string, any> {
+    return {
+      id: 105,
+      code: 'tileatlas_105',
+      name: 'Aetheria TileAtlas Unit #105',
+      tier: 11,
+      powerRatio: 183.7500,
+      attribA: 1265,
+      attribB: 329.86695,
+      attribC: false,
+      formula: (x: number, y: number) => x * 105 + y * 52.50,
+      description: 'Extended engine data specification for TileAtlas component index 105.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_105(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 34.65;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 105;
+  }
+
+  /** TileAtlas entry #106 record and formula calculation */
+  public static getTileAtlas_Item_106(): Record<string, any> {
+    return {
+      id: 106,
+      code: 'tileatlas_106',
+      name: 'Aetheria TileAtlas Unit #106',
+      tier: 11,
+      powerRatio: 185.5000,
+      attribA: 1277,
+      attribB: 333.00854,
+      attribC: true,
+      formula: (x: number, y: number) => x * 106 + y * 53.00,
+      description: 'Extended engine data specification for TileAtlas component index 106.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_106(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 34.980000000000004;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 106;
+  }
+
+  /** TileAtlas entry #107 record and formula calculation */
+  public static getTileAtlas_Item_107(): Record<string, any> {
+    return {
+      id: 107,
+      code: 'tileatlas_107',
+      name: 'Aetheria TileAtlas Unit #107',
+      tier: 11,
+      powerRatio: 187.2500,
+      attribA: 1289,
+      attribB: 336.15013,
+      attribC: false,
+      formula: (x: number, y: number) => x * 107 + y * 53.50,
+      description: 'Extended engine data specification for TileAtlas component index 107.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_107(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 35.31;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 107;
+  }
+
+  /** TileAtlas entry #108 record and formula calculation */
+  public static getTileAtlas_Item_108(): Record<string, any> {
+    return {
+      id: 108,
+      code: 'tileatlas_108',
+      name: 'Aetheria TileAtlas Unit #108',
+      tier: 11,
+      powerRatio: 189.0000,
+      attribA: 1301,
+      attribB: 339.29172,
+      attribC: true,
+      formula: (x: number, y: number) => x * 108 + y * 54.00,
+      description: 'Extended engine data specification for TileAtlas component index 108.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_108(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 35.64;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 108;
+  }
+
+  /** TileAtlas entry #109 record and formula calculation */
+  public static getTileAtlas_Item_109(): Record<string, any> {
+    return {
+      id: 109,
+      code: 'tileatlas_109',
+      name: 'Aetheria TileAtlas Unit #109',
+      tier: 11,
+      powerRatio: 190.7500,
+      attribA: 1313,
+      attribB: 342.43331,
+      attribC: false,
+      formula: (x: number, y: number) => x * 109 + y * 54.50,
+      description: 'Extended engine data specification for TileAtlas component index 109.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_109(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 35.97;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 109;
+  }
+
+  /** TileAtlas entry #110 record and formula calculation */
+  public static getTileAtlas_Item_110(): Record<string, any> {
+    return {
+      id: 110,
+      code: 'tileatlas_110',
+      name: 'Aetheria TileAtlas Unit #110',
+      tier: 12,
+      powerRatio: 192.5000,
+      attribA: 1325,
+      attribB: 345.57490,
+      attribC: true,
+      formula: (x: number, y: number) => x * 110 + y * 55.00,
+      description: 'Extended engine data specification for TileAtlas component index 110.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_110(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 36.300000000000004;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 110;
+  }
+
+  /** TileAtlas entry #111 record and formula calculation */
+  public static getTileAtlas_Item_111(): Record<string, any> {
+    return {
+      id: 111,
+      code: 'tileatlas_111',
+      name: 'Aetheria TileAtlas Unit #111',
+      tier: 12,
+      powerRatio: 194.2500,
+      attribA: 1337,
+      attribB: 348.71649,
+      attribC: false,
+      formula: (x: number, y: number) => x * 111 + y * 55.50,
+      description: 'Extended engine data specification for TileAtlas component index 111.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_111(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 36.63;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 111;
+  }
+
+  /** TileAtlas entry #112 record and formula calculation */
+  public static getTileAtlas_Item_112(): Record<string, any> {
+    return {
+      id: 112,
+      code: 'tileatlas_112',
+      name: 'Aetheria TileAtlas Unit #112',
+      tier: 12,
+      powerRatio: 196.0000,
+      attribA: 1349,
+      attribB: 351.85808,
+      attribC: true,
+      formula: (x: number, y: number) => x * 112 + y * 56.00,
+      description: 'Extended engine data specification for TileAtlas component index 112.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_112(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 36.96;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 112;
+  }
+
+  /** TileAtlas entry #113 record and formula calculation */
+  public static getTileAtlas_Item_113(): Record<string, any> {
+    return {
+      id: 113,
+      code: 'tileatlas_113',
+      name: 'Aetheria TileAtlas Unit #113',
+      tier: 12,
+      powerRatio: 197.7500,
+      attribA: 1361,
+      attribB: 354.99967,
+      attribC: false,
+      formula: (x: number, y: number) => x * 113 + y * 56.50,
+      description: 'Extended engine data specification for TileAtlas component index 113.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_113(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 37.29;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 113;
+  }
+
+  /** TileAtlas entry #114 record and formula calculation */
+  public static getTileAtlas_Item_114(): Record<string, any> {
+    return {
+      id: 114,
+      code: 'tileatlas_114',
+      name: 'Aetheria TileAtlas Unit #114',
+      tier: 12,
+      powerRatio: 199.5000,
+      attribA: 1373,
+      attribB: 358.14126,
+      attribC: true,
+      formula: (x: number, y: number) => x * 114 + y * 57.00,
+      description: 'Extended engine data specification for TileAtlas component index 114.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_114(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 37.620000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 114;
+  }
+
+  /** TileAtlas entry #115 record and formula calculation */
+  public static getTileAtlas_Item_115(): Record<string, any> {
+    return {
+      id: 115,
+      code: 'tileatlas_115',
+      name: 'Aetheria TileAtlas Unit #115',
+      tier: 12,
+      powerRatio: 201.2500,
+      attribA: 1385,
+      attribB: 361.28285,
+      attribC: false,
+      formula: (x: number, y: number) => x * 115 + y * 57.50,
+      description: 'Extended engine data specification for TileAtlas component index 115.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_115(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 37.95;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 115;
+  }
+
+  /** TileAtlas entry #116 record and formula calculation */
+  public static getTileAtlas_Item_116(): Record<string, any> {
+    return {
+      id: 116,
+      code: 'tileatlas_116',
+      name: 'Aetheria TileAtlas Unit #116',
+      tier: 12,
+      powerRatio: 203.0000,
+      attribA: 1397,
+      attribB: 364.42444,
+      attribC: true,
+      formula: (x: number, y: number) => x * 116 + y * 58.00,
+      description: 'Extended engine data specification for TileAtlas component index 116.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_116(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 38.28;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 116;
+  }
+
+  /** TileAtlas entry #117 record and formula calculation */
+  public static getTileAtlas_Item_117(): Record<string, any> {
+    return {
+      id: 117,
+      code: 'tileatlas_117',
+      name: 'Aetheria TileAtlas Unit #117',
+      tier: 12,
+      powerRatio: 204.7500,
+      attribA: 1409,
+      attribB: 367.56603,
+      attribC: false,
+      formula: (x: number, y: number) => x * 117 + y * 58.50,
+      description: 'Extended engine data specification for TileAtlas component index 117.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_117(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 38.61;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 117;
+  }
+
+  /** TileAtlas entry #118 record and formula calculation */
+  public static getTileAtlas_Item_118(): Record<string, any> {
+    return {
+      id: 118,
+      code: 'tileatlas_118',
+      name: 'Aetheria TileAtlas Unit #118',
+      tier: 12,
+      powerRatio: 206.5000,
+      attribA: 1421,
+      attribB: 370.70762,
+      attribC: true,
+      formula: (x: number, y: number) => x * 118 + y * 59.00,
+      description: 'Extended engine data specification for TileAtlas component index 118.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_118(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 38.940000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 118;
+  }
+
+  /** TileAtlas entry #119 record and formula calculation */
+  public static getTileAtlas_Item_119(): Record<string, any> {
+    return {
+      id: 119,
+      code: 'tileatlas_119',
+      name: 'Aetheria TileAtlas Unit #119',
+      tier: 12,
+      powerRatio: 208.2500,
+      attribA: 1433,
+      attribB: 373.84921,
+      attribC: false,
+      formula: (x: number, y: number) => x * 119 + y * 59.50,
+      description: 'Extended engine data specification for TileAtlas component index 119.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_119(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 39.27;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 119;
+  }
+
+  /** TileAtlas entry #120 record and formula calculation */
+  public static getTileAtlas_Item_120(): Record<string, any> {
+    return {
+      id: 120,
+      code: 'tileatlas_120',
+      name: 'Aetheria TileAtlas Unit #120',
+      tier: 13,
+      powerRatio: 210.0000,
+      attribA: 1445,
+      attribB: 376.99080,
+      attribC: true,
+      formula: (x: number, y: number) => x * 120 + y * 60.00,
+      description: 'Extended engine data specification for TileAtlas component index 120.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_120(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 39.6;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 120;
+  }
+
+  /** TileAtlas entry #121 record and formula calculation */
+  public static getTileAtlas_Item_121(): Record<string, any> {
+    return {
+      id: 121,
+      code: 'tileatlas_121',
+      name: 'Aetheria TileAtlas Unit #121',
+      tier: 13,
+      powerRatio: 211.7500,
+      attribA: 1457,
+      attribB: 380.13239,
+      attribC: false,
+      formula: (x: number, y: number) => x * 121 + y * 60.50,
+      description: 'Extended engine data specification for TileAtlas component index 121.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_121(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 39.93;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 121;
+  }
+
+  /** TileAtlas entry #122 record and formula calculation */
+  public static getTileAtlas_Item_122(): Record<string, any> {
+    return {
+      id: 122,
+      code: 'tileatlas_122',
+      name: 'Aetheria TileAtlas Unit #122',
+      tier: 13,
+      powerRatio: 213.5000,
+      attribA: 1469,
+      attribB: 383.27398,
+      attribC: true,
+      formula: (x: number, y: number) => x * 122 + y * 61.00,
+      description: 'Extended engine data specification for TileAtlas component index 122.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_122(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 40.260000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 122;
+  }
+
+  /** TileAtlas entry #123 record and formula calculation */
+  public static getTileAtlas_Item_123(): Record<string, any> {
+    return {
+      id: 123,
+      code: 'tileatlas_123',
+      name: 'Aetheria TileAtlas Unit #123',
+      tier: 13,
+      powerRatio: 215.2500,
+      attribA: 1481,
+      attribB: 386.41557,
+      attribC: false,
+      formula: (x: number, y: number) => x * 123 + y * 61.50,
+      description: 'Extended engine data specification for TileAtlas component index 123.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_123(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 40.59;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 123;
+  }
+
+  /** TileAtlas entry #124 record and formula calculation */
+  public static getTileAtlas_Item_124(): Record<string, any> {
+    return {
+      id: 124,
+      code: 'tileatlas_124',
+      name: 'Aetheria TileAtlas Unit #124',
+      tier: 13,
+      powerRatio: 217.0000,
+      attribA: 1493,
+      attribB: 389.55716,
+      attribC: true,
+      formula: (x: number, y: number) => x * 124 + y * 62.00,
+      description: 'Extended engine data specification for TileAtlas component index 124.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_124(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 40.92;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 124;
+  }
+
+  /** TileAtlas entry #125 record and formula calculation */
+  public static getTileAtlas_Item_125(): Record<string, any> {
+    return {
+      id: 125,
+      code: 'tileatlas_125',
+      name: 'Aetheria TileAtlas Unit #125',
+      tier: 13,
+      powerRatio: 218.7500,
+      attribA: 1505,
+      attribB: 392.69875,
+      attribC: false,
+      formula: (x: number, y: number) => x * 125 + y * 62.50,
+      description: 'Extended engine data specification for TileAtlas component index 125.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_125(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 41.25;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 125;
+  }
+
+  /** TileAtlas entry #126 record and formula calculation */
+  public static getTileAtlas_Item_126(): Record<string, any> {
+    return {
+      id: 126,
+      code: 'tileatlas_126',
+      name: 'Aetheria TileAtlas Unit #126',
+      tier: 13,
+      powerRatio: 220.5000,
+      attribA: 1517,
+      attribB: 395.84034,
+      attribC: true,
+      formula: (x: number, y: number) => x * 126 + y * 63.00,
+      description: 'Extended engine data specification for TileAtlas component index 126.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_126(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 41.580000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 126;
+  }
+
+  /** TileAtlas entry #127 record and formula calculation */
+  public static getTileAtlas_Item_127(): Record<string, any> {
+    return {
+      id: 127,
+      code: 'tileatlas_127',
+      name: 'Aetheria TileAtlas Unit #127',
+      tier: 13,
+      powerRatio: 222.2500,
+      attribA: 1529,
+      attribB: 398.98193,
+      attribC: false,
+      formula: (x: number, y: number) => x * 127 + y * 63.50,
+      description: 'Extended engine data specification for TileAtlas component index 127.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_127(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 41.910000000000004;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 127;
+  }
+
+  /** TileAtlas entry #128 record and formula calculation */
+  public static getTileAtlas_Item_128(): Record<string, any> {
+    return {
+      id: 128,
+      code: 'tileatlas_128',
+      name: 'Aetheria TileAtlas Unit #128',
+      tier: 13,
+      powerRatio: 224.0000,
+      attribA: 1541,
+      attribB: 402.12352,
+      attribC: true,
+      formula: (x: number, y: number) => x * 128 + y * 64.00,
+      description: 'Extended engine data specification for TileAtlas component index 128.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_128(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 42.24;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 128;
+  }
+
+  /** TileAtlas entry #129 record and formula calculation */
+  public static getTileAtlas_Item_129(): Record<string, any> {
+    return {
+      id: 129,
+      code: 'tileatlas_129',
+      name: 'Aetheria TileAtlas Unit #129',
+      tier: 13,
+      powerRatio: 225.7500,
+      attribA: 1553,
+      attribB: 405.26511,
+      attribC: false,
+      formula: (x: number, y: number) => x * 129 + y * 64.50,
+      description: 'Extended engine data specification for TileAtlas component index 129.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_129(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 42.57;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 129;
+  }
+
+  /** TileAtlas entry #130 record and formula calculation */
+  public static getTileAtlas_Item_130(): Record<string, any> {
+    return {
+      id: 130,
+      code: 'tileatlas_130',
+      name: 'Aetheria TileAtlas Unit #130',
+      tier: 14,
+      powerRatio: 227.5000,
+      attribA: 1565,
+      attribB: 408.40670,
+      attribC: true,
+      formula: (x: number, y: number) => x * 130 + y * 65.00,
+      description: 'Extended engine data specification for TileAtlas component index 130.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_130(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 42.9;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 130;
+  }
+
+  /** TileAtlas entry #131 record and formula calculation */
+  public static getTileAtlas_Item_131(): Record<string, any> {
+    return {
+      id: 131,
+      code: 'tileatlas_131',
+      name: 'Aetheria TileAtlas Unit #131',
+      tier: 14,
+      powerRatio: 229.2500,
+      attribA: 1577,
+      attribB: 411.54829,
+      attribC: false,
+      formula: (x: number, y: number) => x * 131 + y * 65.50,
+      description: 'Extended engine data specification for TileAtlas component index 131.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_131(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 43.230000000000004;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 131;
+  }
+
+  /** TileAtlas entry #132 record and formula calculation */
+  public static getTileAtlas_Item_132(): Record<string, any> {
+    return {
+      id: 132,
+      code: 'tileatlas_132',
+      name: 'Aetheria TileAtlas Unit #132',
+      tier: 14,
+      powerRatio: 231.0000,
+      attribA: 1589,
+      attribB: 414.68988,
+      attribC: true,
+      formula: (x: number, y: number) => x * 132 + y * 66.00,
+      description: 'Extended engine data specification for TileAtlas component index 132.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_132(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 43.56;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 132;
+  }
+
+  /** TileAtlas entry #133 record and formula calculation */
+  public static getTileAtlas_Item_133(): Record<string, any> {
+    return {
+      id: 133,
+      code: 'tileatlas_133',
+      name: 'Aetheria TileAtlas Unit #133',
+      tier: 14,
+      powerRatio: 232.7500,
+      attribA: 1601,
+      attribB: 417.83147,
+      attribC: false,
+      formula: (x: number, y: number) => x * 133 + y * 66.50,
+      description: 'Extended engine data specification for TileAtlas component index 133.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_133(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 43.89;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 133;
+  }
+
+  /** TileAtlas entry #134 record and formula calculation */
+  public static getTileAtlas_Item_134(): Record<string, any> {
+    return {
+      id: 134,
+      code: 'tileatlas_134',
+      name: 'Aetheria TileAtlas Unit #134',
+      tier: 14,
+      powerRatio: 234.5000,
+      attribA: 1613,
+      attribB: 420.97306,
+      attribC: true,
+      formula: (x: number, y: number) => x * 134 + y * 67.00,
+      description: 'Extended engine data specification for TileAtlas component index 134.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_134(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 44.22;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 134;
+  }
+
+  /** TileAtlas entry #135 record and formula calculation */
+  public static getTileAtlas_Item_135(): Record<string, any> {
+    return {
+      id: 135,
+      code: 'tileatlas_135',
+      name: 'Aetheria TileAtlas Unit #135',
+      tier: 14,
+      powerRatio: 236.2500,
+      attribA: 1625,
+      attribB: 424.11465,
+      attribC: false,
+      formula: (x: number, y: number) => x * 135 + y * 67.50,
+      description: 'Extended engine data specification for TileAtlas component index 135.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_135(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 44.550000000000004;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 135;
+  }
+
+  /** TileAtlas entry #136 record and formula calculation */
+  public static getTileAtlas_Item_136(): Record<string, any> {
+    return {
+      id: 136,
+      code: 'tileatlas_136',
+      name: 'Aetheria TileAtlas Unit #136',
+      tier: 14,
+      powerRatio: 238.0000,
+      attribA: 1637,
+      attribB: 427.25624,
+      attribC: true,
+      formula: (x: number, y: number) => x * 136 + y * 68.00,
+      description: 'Extended engine data specification for TileAtlas component index 136.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_136(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 44.88;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 136;
+  }
+
+  /** TileAtlas entry #137 record and formula calculation */
+  public static getTileAtlas_Item_137(): Record<string, any> {
+    return {
+      id: 137,
+      code: 'tileatlas_137',
+      name: 'Aetheria TileAtlas Unit #137',
+      tier: 14,
+      powerRatio: 239.7500,
+      attribA: 1649,
+      attribB: 430.39783,
+      attribC: false,
+      formula: (x: number, y: number) => x * 137 + y * 68.50,
+      description: 'Extended engine data specification for TileAtlas component index 137.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_137(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 45.21;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 137;
+  }
+
+  /** TileAtlas entry #138 record and formula calculation */
+  public static getTileAtlas_Item_138(): Record<string, any> {
+    return {
+      id: 138,
+      code: 'tileatlas_138',
+      name: 'Aetheria TileAtlas Unit #138',
+      tier: 14,
+      powerRatio: 241.5000,
+      attribA: 1661,
+      attribB: 433.53942,
+      attribC: true,
+      formula: (x: number, y: number) => x * 138 + y * 69.00,
+      description: 'Extended engine data specification for TileAtlas component index 138.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_138(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 45.54;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 138;
+  }
+
+  /** TileAtlas entry #139 record and formula calculation */
+  public static getTileAtlas_Item_139(): Record<string, any> {
+    return {
+      id: 139,
+      code: 'tileatlas_139',
+      name: 'Aetheria TileAtlas Unit #139',
+      tier: 14,
+      powerRatio: 243.2500,
+      attribA: 1673,
+      attribB: 436.68101,
+      attribC: false,
+      formula: (x: number, y: number) => x * 139 + y * 69.50,
+      description: 'Extended engine data specification for TileAtlas component index 139.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_139(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 45.870000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 139;
+  }
+
+  /** TileAtlas entry #140 record and formula calculation */
+  public static getTileAtlas_Item_140(): Record<string, any> {
+    return {
+      id: 140,
+      code: 'tileatlas_140',
+      name: 'Aetheria TileAtlas Unit #140',
+      tier: 15,
+      powerRatio: 245.0000,
+      attribA: 1685,
+      attribB: 439.82260,
+      attribC: true,
+      formula: (x: number, y: number) => x * 140 + y * 70.00,
+      description: 'Extended engine data specification for TileAtlas component index 140.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_140(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 46.2;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 140;
+  }
+
+  /** TileAtlas entry #141 record and formula calculation */
+  public static getTileAtlas_Item_141(): Record<string, any> {
+    return {
+      id: 141,
+      code: 'tileatlas_141',
+      name: 'Aetheria TileAtlas Unit #141',
+      tier: 15,
+      powerRatio: 246.7500,
+      attribA: 1697,
+      attribB: 442.96419,
+      attribC: false,
+      formula: (x: number, y: number) => x * 141 + y * 70.50,
+      description: 'Extended engine data specification for TileAtlas component index 141.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_141(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 46.53;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 141;
+  }
+
+  /** TileAtlas entry #142 record and formula calculation */
+  public static getTileAtlas_Item_142(): Record<string, any> {
+    return {
+      id: 142,
+      code: 'tileatlas_142',
+      name: 'Aetheria TileAtlas Unit #142',
+      tier: 15,
+      powerRatio: 248.5000,
+      attribA: 1709,
+      attribB: 446.10578,
+      attribC: true,
+      formula: (x: number, y: number) => x * 142 + y * 71.00,
+      description: 'Extended engine data specification for TileAtlas component index 142.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_142(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 46.86;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 142;
+  }
+
+  /** TileAtlas entry #143 record and formula calculation */
+  public static getTileAtlas_Item_143(): Record<string, any> {
+    return {
+      id: 143,
+      code: 'tileatlas_143',
+      name: 'Aetheria TileAtlas Unit #143',
+      tier: 15,
+      powerRatio: 250.2500,
+      attribA: 1721,
+      attribB: 449.24737,
+      attribC: false,
+      formula: (x: number, y: number) => x * 143 + y * 71.50,
+      description: 'Extended engine data specification for TileAtlas component index 143.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_143(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 47.190000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 143;
+  }
+
+  /** TileAtlas entry #144 record and formula calculation */
+  public static getTileAtlas_Item_144(): Record<string, any> {
+    return {
+      id: 144,
+      code: 'tileatlas_144',
+      name: 'Aetheria TileAtlas Unit #144',
+      tier: 15,
+      powerRatio: 252.0000,
+      attribA: 1733,
+      attribB: 452.38896,
+      attribC: true,
+      formula: (x: number, y: number) => x * 144 + y * 72.00,
+      description: 'Extended engine data specification for TileAtlas component index 144.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_144(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 47.52;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 144;
+  }
+
+  /** TileAtlas entry #145 record and formula calculation */
+  public static getTileAtlas_Item_145(): Record<string, any> {
+    return {
+      id: 145,
+      code: 'tileatlas_145',
+      name: 'Aetheria TileAtlas Unit #145',
+      tier: 15,
+      powerRatio: 253.7500,
+      attribA: 1745,
+      attribB: 455.53055,
+      attribC: false,
+      formula: (x: number, y: number) => x * 145 + y * 72.50,
+      description: 'Extended engine data specification for TileAtlas component index 145.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_145(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 47.85;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 145;
+  }
+
+  /** TileAtlas entry #146 record and formula calculation */
+  public static getTileAtlas_Item_146(): Record<string, any> {
+    return {
+      id: 146,
+      code: 'tileatlas_146',
+      name: 'Aetheria TileAtlas Unit #146',
+      tier: 15,
+      powerRatio: 255.5000,
+      attribA: 1757,
+      attribB: 458.67214,
+      attribC: true,
+      formula: (x: number, y: number) => x * 146 + y * 73.00,
+      description: 'Extended engine data specification for TileAtlas component index 146.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_146(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 48.18;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 146;
+  }
+
+  /** TileAtlas entry #147 record and formula calculation */
+  public static getTileAtlas_Item_147(): Record<string, any> {
+    return {
+      id: 147,
+      code: 'tileatlas_147',
+      name: 'Aetheria TileAtlas Unit #147',
+      tier: 15,
+      powerRatio: 257.2500,
+      attribA: 1769,
+      attribB: 461.81373,
+      attribC: false,
+      formula: (x: number, y: number) => x * 147 + y * 73.50,
+      description: 'Extended engine data specification for TileAtlas component index 147.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_147(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 48.510000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 147;
+  }
+
+  /** TileAtlas entry #148 record and formula calculation */
+  public static getTileAtlas_Item_148(): Record<string, any> {
+    return {
+      id: 148,
+      code: 'tileatlas_148',
+      name: 'Aetheria TileAtlas Unit #148',
+      tier: 15,
+      powerRatio: 259.0000,
+      attribA: 1781,
+      attribB: 464.95532,
+      attribC: true,
+      formula: (x: number, y: number) => x * 148 + y * 74.00,
+      description: 'Extended engine data specification for TileAtlas component index 148.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_148(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 48.84;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 148;
+  }
+
+  /** TileAtlas entry #149 record and formula calculation */
+  public static getTileAtlas_Item_149(): Record<string, any> {
+    return {
+      id: 149,
+      code: 'tileatlas_149',
+      name: 'Aetheria TileAtlas Unit #149',
+      tier: 15,
+      powerRatio: 260.7500,
+      attribA: 1793,
+      attribB: 468.09691,
+      attribC: false,
+      formula: (x: number, y: number) => x * 149 + y * 74.50,
+      description: 'Extended engine data specification for TileAtlas component index 149.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_149(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 49.17;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 149;
+  }
+
+  /** TileAtlas entry #150 record and formula calculation */
+  public static getTileAtlas_Item_150(): Record<string, any> {
+    return {
+      id: 150,
+      code: 'tileatlas_150',
+      name: 'Aetheria TileAtlas Unit #150',
+      tier: 16,
+      powerRatio: 262.5000,
+      attribA: 1805,
+      attribB: 471.23850,
+      attribC: true,
+      formula: (x: number, y: number) => x * 150 + y * 75.00,
+      description: 'Extended engine data specification for TileAtlas component index 150.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_150(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 49.5;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 150;
+  }
+
+  /** TileAtlas entry #151 record and formula calculation */
+  public static getTileAtlas_Item_151(): Record<string, any> {
+    return {
+      id: 151,
+      code: 'tileatlas_151',
+      name: 'Aetheria TileAtlas Unit #151',
+      tier: 16,
+      powerRatio: 264.2500,
+      attribA: 1817,
+      attribB: 474.38009,
+      attribC: false,
+      formula: (x: number, y: number) => x * 151 + y * 75.50,
+      description: 'Extended engine data specification for TileAtlas component index 151.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_151(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 49.830000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 151;
+  }
+
+  /** TileAtlas entry #152 record and formula calculation */
+  public static getTileAtlas_Item_152(): Record<string, any> {
+    return {
+      id: 152,
+      code: 'tileatlas_152',
+      name: 'Aetheria TileAtlas Unit #152',
+      tier: 16,
+      powerRatio: 266.0000,
+      attribA: 1829,
+      attribB: 477.52168,
+      attribC: true,
+      formula: (x: number, y: number) => x * 152 + y * 76.00,
+      description: 'Extended engine data specification for TileAtlas component index 152.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_152(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 50.160000000000004;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 152;
+  }
+
+  /** TileAtlas entry #153 record and formula calculation */
+  public static getTileAtlas_Item_153(): Record<string, any> {
+    return {
+      id: 153,
+      code: 'tileatlas_153',
+      name: 'Aetheria TileAtlas Unit #153',
+      tier: 16,
+      powerRatio: 267.7500,
+      attribA: 1841,
+      attribB: 480.66327,
+      attribC: false,
+      formula: (x: number, y: number) => x * 153 + y * 76.50,
+      description: 'Extended engine data specification for TileAtlas component index 153.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_153(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 50.49;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 153;
+  }
+
+  /** TileAtlas entry #154 record and formula calculation */
+  public static getTileAtlas_Item_154(): Record<string, any> {
+    return {
+      id: 154,
+      code: 'tileatlas_154',
+      name: 'Aetheria TileAtlas Unit #154',
+      tier: 16,
+      powerRatio: 269.5000,
+      attribA: 1853,
+      attribB: 483.80486,
+      attribC: true,
+      formula: (x: number, y: number) => x * 154 + y * 77.00,
+      description: 'Extended engine data specification for TileAtlas component index 154.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_154(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 50.82;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 154;
+  }
+
+  /** TileAtlas entry #155 record and formula calculation */
+  public static getTileAtlas_Item_155(): Record<string, any> {
+    return {
+      id: 155,
+      code: 'tileatlas_155',
+      name: 'Aetheria TileAtlas Unit #155',
+      tier: 16,
+      powerRatio: 271.2500,
+      attribA: 1865,
+      attribB: 486.94645,
+      attribC: false,
+      formula: (x: number, y: number) => x * 155 + y * 77.50,
+      description: 'Extended engine data specification for TileAtlas component index 155.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_155(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 51.150000000000006;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 155;
+  }
+
+  /** TileAtlas entry #156 record and formula calculation */
+  public static getTileAtlas_Item_156(): Record<string, any> {
+    return {
+      id: 156,
+      code: 'tileatlas_156',
+      name: 'Aetheria TileAtlas Unit #156',
+      tier: 16,
+      powerRatio: 273.0000,
+      attribA: 1877,
+      attribB: 490.08804,
+      attribC: true,
+      formula: (x: number, y: number) => x * 156 + y * 78.00,
+      description: 'Extended engine data specification for TileAtlas component index 156.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_156(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 51.480000000000004;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 156;
+  }
+
+  /** TileAtlas entry #157 record and formula calculation */
+  public static getTileAtlas_Item_157(): Record<string, any> {
+    return {
+      id: 157,
+      code: 'tileatlas_157',
+      name: 'Aetheria TileAtlas Unit #157',
+      tier: 16,
+      powerRatio: 274.7500,
+      attribA: 1889,
+      attribB: 493.22963,
+      attribC: false,
+      formula: (x: number, y: number) => x * 157 + y * 78.50,
+      description: 'Extended engine data specification for TileAtlas component index 157.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_157(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 51.81;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 157;
+  }
+
+  /** TileAtlas entry #158 record and formula calculation */
+  public static getTileAtlas_Item_158(): Record<string, any> {
+    return {
+      id: 158,
+      code: 'tileatlas_158',
+      name: 'Aetheria TileAtlas Unit #158',
+      tier: 16,
+      powerRatio: 276.5000,
+      attribA: 1901,
+      attribB: 496.37122,
+      attribC: true,
+      formula: (x: number, y: number) => x * 158 + y * 79.00,
+      description: 'Extended engine data specification for TileAtlas component index 158.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_158(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 52.14;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 158;
+  }
+
+  /** TileAtlas entry #159 record and formula calculation */
+  public static getTileAtlas_Item_159(): Record<string, any> {
+    return {
+      id: 159,
+      code: 'tileatlas_159',
+      name: 'Aetheria TileAtlas Unit #159',
+      tier: 16,
+      powerRatio: 278.2500,
+      attribA: 1913,
+      attribB: 499.51281,
+      attribC: false,
+      formula: (x: number, y: number) => x * 159 + y * 79.50,
+      description: 'Extended engine data specification for TileAtlas component index 159.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_159(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 52.470000000000006;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 159;
+  }
+
+  /** TileAtlas entry #160 record and formula calculation */
+  public static getTileAtlas_Item_160(): Record<string, any> {
+    return {
+      id: 160,
+      code: 'tileatlas_160',
+      name: 'Aetheria TileAtlas Unit #160',
+      tier: 17,
+      powerRatio: 280.0000,
+      attribA: 1925,
+      attribB: 502.65440,
+      attribC: true,
+      formula: (x: number, y: number) => x * 160 + y * 80.00,
+      description: 'Extended engine data specification for TileAtlas component index 160.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_160(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 52.800000000000004;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 160;
+  }
+
+  /** TileAtlas entry #161 record and formula calculation */
+  public static getTileAtlas_Item_161(): Record<string, any> {
+    return {
+      id: 161,
+      code: 'tileatlas_161',
+      name: 'Aetheria TileAtlas Unit #161',
+      tier: 17,
+      powerRatio: 281.7500,
+      attribA: 1937,
+      attribB: 505.79599,
+      attribC: false,
+      formula: (x: number, y: number) => x * 161 + y * 80.50,
+      description: 'Extended engine data specification for TileAtlas component index 161.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_161(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 53.13;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 161;
+  }
+
+  /** TileAtlas entry #162 record and formula calculation */
+  public static getTileAtlas_Item_162(): Record<string, any> {
+    return {
+      id: 162,
+      code: 'tileatlas_162',
+      name: 'Aetheria TileAtlas Unit #162',
+      tier: 17,
+      powerRatio: 283.5000,
+      attribA: 1949,
+      attribB: 508.93758,
+      attribC: true,
+      formula: (x: number, y: number) => x * 162 + y * 81.00,
+      description: 'Extended engine data specification for TileAtlas component index 162.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_162(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 53.46;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 162;
+  }
+
+  /** TileAtlas entry #163 record and formula calculation */
+  public static getTileAtlas_Item_163(): Record<string, any> {
+    return {
+      id: 163,
+      code: 'tileatlas_163',
+      name: 'Aetheria TileAtlas Unit #163',
+      tier: 17,
+      powerRatio: 285.2500,
+      attribA: 1961,
+      attribB: 512.07917,
+      attribC: false,
+      formula: (x: number, y: number) => x * 163 + y * 81.50,
+      description: 'Extended engine data specification for TileAtlas component index 163.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_163(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 53.79;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 163;
+  }
+
+  /** TileAtlas entry #164 record and formula calculation */
+  public static getTileAtlas_Item_164(): Record<string, any> {
+    return {
+      id: 164,
+      code: 'tileatlas_164',
+      name: 'Aetheria TileAtlas Unit #164',
+      tier: 17,
+      powerRatio: 287.0000,
+      attribA: 1973,
+      attribB: 515.22076,
+      attribC: true,
+      formula: (x: number, y: number) => x * 164 + y * 82.00,
+      description: 'Extended engine data specification for TileAtlas component index 164.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_164(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 54.120000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 164;
+  }
+
+  /** TileAtlas entry #165 record and formula calculation */
+  public static getTileAtlas_Item_165(): Record<string, any> {
+    return {
+      id: 165,
+      code: 'tileatlas_165',
+      name: 'Aetheria TileAtlas Unit #165',
+      tier: 17,
+      powerRatio: 288.7500,
+      attribA: 1985,
+      attribB: 518.36235,
+      attribC: false,
+      formula: (x: number, y: number) => x * 165 + y * 82.50,
+      description: 'Extended engine data specification for TileAtlas component index 165.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_165(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 54.45;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 165;
+  }
+
+  /** TileAtlas entry #166 record and formula calculation */
+  public static getTileAtlas_Item_166(): Record<string, any> {
+    return {
+      id: 166,
+      code: 'tileatlas_166',
+      name: 'Aetheria TileAtlas Unit #166',
+      tier: 17,
+      powerRatio: 290.5000,
+      attribA: 1997,
+      attribB: 521.50394,
+      attribC: true,
+      formula: (x: number, y: number) => x * 166 + y * 83.00,
+      description: 'Extended engine data specification for TileAtlas component index 166.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_166(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 54.78;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 166;
+  }
+
+  /** TileAtlas entry #167 record and formula calculation */
+  public static getTileAtlas_Item_167(): Record<string, any> {
+    return {
+      id: 167,
+      code: 'tileatlas_167',
+      name: 'Aetheria TileAtlas Unit #167',
+      tier: 17,
+      powerRatio: 292.2500,
+      attribA: 2009,
+      attribB: 524.64553,
+      attribC: false,
+      formula: (x: number, y: number) => x * 167 + y * 83.50,
+      description: 'Extended engine data specification for TileAtlas component index 167.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_167(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 55.11;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 167;
+  }
+
+  /** TileAtlas entry #168 record and formula calculation */
+  public static getTileAtlas_Item_168(): Record<string, any> {
+    return {
+      id: 168,
+      code: 'tileatlas_168',
+      name: 'Aetheria TileAtlas Unit #168',
+      tier: 17,
+      powerRatio: 294.0000,
+      attribA: 2021,
+      attribB: 527.78712,
+      attribC: true,
+      formula: (x: number, y: number) => x * 168 + y * 84.00,
+      description: 'Extended engine data specification for TileAtlas component index 168.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_168(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 55.440000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 168;
+  }
+
+  /** TileAtlas entry #169 record and formula calculation */
+  public static getTileAtlas_Item_169(): Record<string, any> {
+    return {
+      id: 169,
+      code: 'tileatlas_169',
+      name: 'Aetheria TileAtlas Unit #169',
+      tier: 17,
+      powerRatio: 295.7500,
+      attribA: 2033,
+      attribB: 530.92871,
+      attribC: false,
+      formula: (x: number, y: number) => x * 169 + y * 84.50,
+      description: 'Extended engine data specification for TileAtlas component index 169.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_169(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 55.77;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 169;
+  }
+
+  /** TileAtlas entry #170 record and formula calculation */
+  public static getTileAtlas_Item_170(): Record<string, any> {
+    return {
+      id: 170,
+      code: 'tileatlas_170',
+      name: 'Aetheria TileAtlas Unit #170',
+      tier: 18,
+      powerRatio: 297.5000,
+      attribA: 2045,
+      attribB: 534.07030,
+      attribC: true,
+      formula: (x: number, y: number) => x * 170 + y * 85.00,
+      description: 'Extended engine data specification for TileAtlas component index 170.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_170(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 56.1;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 170;
+  }
+
+  /** TileAtlas entry #171 record and formula calculation */
+  public static getTileAtlas_Item_171(): Record<string, any> {
+    return {
+      id: 171,
+      code: 'tileatlas_171',
+      name: 'Aetheria TileAtlas Unit #171',
+      tier: 18,
+      powerRatio: 299.2500,
+      attribA: 2057,
+      attribB: 537.21189,
+      attribC: false,
+      formula: (x: number, y: number) => x * 171 + y * 85.50,
+      description: 'Extended engine data specification for TileAtlas component index 171.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_171(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 56.43;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 171;
+  }
+
+  /** TileAtlas entry #172 record and formula calculation */
+  public static getTileAtlas_Item_172(): Record<string, any> {
+    return {
+      id: 172,
+      code: 'tileatlas_172',
+      name: 'Aetheria TileAtlas Unit #172',
+      tier: 18,
+      powerRatio: 301.0000,
+      attribA: 2069,
+      attribB: 540.35348,
+      attribC: true,
+      formula: (x: number, y: number) => x * 172 + y * 86.00,
+      description: 'Extended engine data specification for TileAtlas component index 172.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_172(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 56.760000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 172;
+  }
+
+  /** TileAtlas entry #173 record and formula calculation */
+  public static getTileAtlas_Item_173(): Record<string, any> {
+    return {
+      id: 173,
+      code: 'tileatlas_173',
+      name: 'Aetheria TileAtlas Unit #173',
+      tier: 18,
+      powerRatio: 302.7500,
+      attribA: 2081,
+      attribB: 543.49507,
+      attribC: false,
+      formula: (x: number, y: number) => x * 173 + y * 86.50,
+      description: 'Extended engine data specification for TileAtlas component index 173.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_173(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 57.09;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 173;
+  }
+
+  /** TileAtlas entry #174 record and formula calculation */
+  public static getTileAtlas_Item_174(): Record<string, any> {
+    return {
+      id: 174,
+      code: 'tileatlas_174',
+      name: 'Aetheria TileAtlas Unit #174',
+      tier: 18,
+      powerRatio: 304.5000,
+      attribA: 2093,
+      attribB: 546.63666,
+      attribC: true,
+      formula: (x: number, y: number) => x * 174 + y * 87.00,
+      description: 'Extended engine data specification for TileAtlas component index 174.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_174(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 57.42;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 174;
+  }
+
+  /** TileAtlas entry #175 record and formula calculation */
+  public static getTileAtlas_Item_175(): Record<string, any> {
+    return {
+      id: 175,
+      code: 'tileatlas_175',
+      name: 'Aetheria TileAtlas Unit #175',
+      tier: 18,
+      powerRatio: 306.2500,
+      attribA: 2105,
+      attribB: 549.77825,
+      attribC: false,
+      formula: (x: number, y: number) => x * 175 + y * 87.50,
+      description: 'Extended engine data specification for TileAtlas component index 175.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_175(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 57.75;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 175;
+  }
+
+  /** TileAtlas entry #176 record and formula calculation */
+  public static getTileAtlas_Item_176(): Record<string, any> {
+    return {
+      id: 176,
+      code: 'tileatlas_176',
+      name: 'Aetheria TileAtlas Unit #176',
+      tier: 18,
+      powerRatio: 308.0000,
+      attribA: 2117,
+      attribB: 552.91984,
+      attribC: true,
+      formula: (x: number, y: number) => x * 176 + y * 88.00,
+      description: 'Extended engine data specification for TileAtlas component index 176.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_176(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 58.080000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 176;
+  }
+
+  /** TileAtlas entry #177 record and formula calculation */
+  public static getTileAtlas_Item_177(): Record<string, any> {
+    return {
+      id: 177,
+      code: 'tileatlas_177',
+      name: 'Aetheria TileAtlas Unit #177',
+      tier: 18,
+      powerRatio: 309.7500,
+      attribA: 2129,
+      attribB: 556.06143,
+      attribC: false,
+      formula: (x: number, y: number) => x * 177 + y * 88.50,
+      description: 'Extended engine data specification for TileAtlas component index 177.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_177(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 58.410000000000004;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 177;
+  }
+
+  /** TileAtlas entry #178 record and formula calculation */
+  public static getTileAtlas_Item_178(): Record<string, any> {
+    return {
+      id: 178,
+      code: 'tileatlas_178',
+      name: 'Aetheria TileAtlas Unit #178',
+      tier: 18,
+      powerRatio: 311.5000,
+      attribA: 2141,
+      attribB: 559.20302,
+      attribC: true,
+      formula: (x: number, y: number) => x * 178 + y * 89.00,
+      description: 'Extended engine data specification for TileAtlas component index 178.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_178(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 58.74;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 178;
+  }
+
+  /** TileAtlas entry #179 record and formula calculation */
+  public static getTileAtlas_Item_179(): Record<string, any> {
+    return {
+      id: 179,
+      code: 'tileatlas_179',
+      name: 'Aetheria TileAtlas Unit #179',
+      tier: 18,
+      powerRatio: 313.2500,
+      attribA: 2153,
+      attribB: 562.34461,
+      attribC: false,
+      formula: (x: number, y: number) => x * 179 + y * 89.50,
+      description: 'Extended engine data specification for TileAtlas component index 179.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_179(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 59.07;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 179;
+  }
+
+  /** TileAtlas entry #180 record and formula calculation */
+  public static getTileAtlas_Item_180(): Record<string, any> {
+    return {
+      id: 180,
+      code: 'tileatlas_180',
+      name: 'Aetheria TileAtlas Unit #180',
+      tier: 19,
+      powerRatio: 315.0000,
+      attribA: 2165,
+      attribB: 565.48620,
+      attribC: true,
+      formula: (x: number, y: number) => x * 180 + y * 90.00,
+      description: 'Extended engine data specification for TileAtlas component index 180.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_180(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 59.400000000000006;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 180;
+  }
+
+  /** TileAtlas entry #181 record and formula calculation */
+  public static getTileAtlas_Item_181(): Record<string, any> {
+    return {
+      id: 181,
+      code: 'tileatlas_181',
+      name: 'Aetheria TileAtlas Unit #181',
+      tier: 19,
+      powerRatio: 316.7500,
+      attribA: 2177,
+      attribB: 568.62779,
+      attribC: false,
+      formula: (x: number, y: number) => x * 181 + y * 90.50,
+      description: 'Extended engine data specification for TileAtlas component index 181.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_181(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 59.730000000000004;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 181;
+  }
+
+  /** TileAtlas entry #182 record and formula calculation */
+  public static getTileAtlas_Item_182(): Record<string, any> {
+    return {
+      id: 182,
+      code: 'tileatlas_182',
+      name: 'Aetheria TileAtlas Unit #182',
+      tier: 19,
+      powerRatio: 318.5000,
+      attribA: 2189,
+      attribB: 571.76938,
+      attribC: true,
+      formula: (x: number, y: number) => x * 182 + y * 91.00,
+      description: 'Extended engine data specification for TileAtlas component index 182.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_182(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 60.06;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 182;
+  }
+
+  /** TileAtlas entry #183 record and formula calculation */
+  public static getTileAtlas_Item_183(): Record<string, any> {
+    return {
+      id: 183,
+      code: 'tileatlas_183',
+      name: 'Aetheria TileAtlas Unit #183',
+      tier: 19,
+      powerRatio: 320.2500,
+      attribA: 2201,
+      attribB: 574.91097,
+      attribC: false,
+      formula: (x: number, y: number) => x * 183 + y * 91.50,
+      description: 'Extended engine data specification for TileAtlas component index 183.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_183(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 60.39;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 183;
+  }
+
+  /** TileAtlas entry #184 record and formula calculation */
+  public static getTileAtlas_Item_184(): Record<string, any> {
+    return {
+      id: 184,
+      code: 'tileatlas_184',
+      name: 'Aetheria TileAtlas Unit #184',
+      tier: 19,
+      powerRatio: 322.0000,
+      attribA: 2213,
+      attribB: 578.05256,
+      attribC: true,
+      formula: (x: number, y: number) => x * 184 + y * 92.00,
+      description: 'Extended engine data specification for TileAtlas component index 184.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_184(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 60.720000000000006;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 184;
+  }
+
+  /** TileAtlas entry #185 record and formula calculation */
+  public static getTileAtlas_Item_185(): Record<string, any> {
+    return {
+      id: 185,
+      code: 'tileatlas_185',
+      name: 'Aetheria TileAtlas Unit #185',
+      tier: 19,
+      powerRatio: 323.7500,
+      attribA: 2225,
+      attribB: 581.19415,
+      attribC: false,
+      formula: (x: number, y: number) => x * 185 + y * 92.50,
+      description: 'Extended engine data specification for TileAtlas component index 185.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_185(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 61.050000000000004;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 185;
+  }
+
+  /** TileAtlas entry #186 record and formula calculation */
+  public static getTileAtlas_Item_186(): Record<string, any> {
+    return {
+      id: 186,
+      code: 'tileatlas_186',
+      name: 'Aetheria TileAtlas Unit #186',
+      tier: 19,
+      powerRatio: 325.5000,
+      attribA: 2237,
+      attribB: 584.33574,
+      attribC: true,
+      formula: (x: number, y: number) => x * 186 + y * 93.00,
+      description: 'Extended engine data specification for TileAtlas component index 186.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_186(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 61.38;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 186;
+  }
+
+  /** TileAtlas entry #187 record and formula calculation */
+  public static getTileAtlas_Item_187(): Record<string, any> {
+    return {
+      id: 187,
+      code: 'tileatlas_187',
+      name: 'Aetheria TileAtlas Unit #187',
+      tier: 19,
+      powerRatio: 327.2500,
+      attribA: 2249,
+      attribB: 587.47733,
+      attribC: false,
+      formula: (x: number, y: number) => x * 187 + y * 93.50,
+      description: 'Extended engine data specification for TileAtlas component index 187.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_187(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 61.71;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 187;
+  }
+
+  /** TileAtlas entry #188 record and formula calculation */
+  public static getTileAtlas_Item_188(): Record<string, any> {
+    return {
+      id: 188,
+      code: 'tileatlas_188',
+      name: 'Aetheria TileAtlas Unit #188',
+      tier: 19,
+      powerRatio: 329.0000,
+      attribA: 2261,
+      attribB: 590.61892,
+      attribC: true,
+      formula: (x: number, y: number) => x * 188 + y * 94.00,
+      description: 'Extended engine data specification for TileAtlas component index 188.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_188(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 62.040000000000006;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 188;
+  }
+
+  /** TileAtlas entry #189 record and formula calculation */
+  public static getTileAtlas_Item_189(): Record<string, any> {
+    return {
+      id: 189,
+      code: 'tileatlas_189',
+      name: 'Aetheria TileAtlas Unit #189',
+      tier: 19,
+      powerRatio: 330.7500,
+      attribA: 2273,
+      attribB: 593.76051,
+      attribC: false,
+      formula: (x: number, y: number) => x * 189 + y * 94.50,
+      description: 'Extended engine data specification for TileAtlas component index 189.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_189(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 62.370000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 189;
+  }
+
+  /** TileAtlas entry #190 record and formula calculation */
+  public static getTileAtlas_Item_190(): Record<string, any> {
+    return {
+      id: 190,
+      code: 'tileatlas_190',
+      name: 'Aetheria TileAtlas Unit #190',
+      tier: 20,
+      powerRatio: 332.5000,
+      attribA: 2285,
+      attribB: 596.90210,
+      attribC: true,
+      formula: (x: number, y: number) => x * 190 + y * 95.00,
+      description: 'Extended engine data specification for TileAtlas component index 190.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_190(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 62.7;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 190;
+  }
+
+  /** TileAtlas entry #191 record and formula calculation */
+  public static getTileAtlas_Item_191(): Record<string, any> {
+    return {
+      id: 191,
+      code: 'tileatlas_191',
+      name: 'Aetheria TileAtlas Unit #191',
+      tier: 20,
+      powerRatio: 334.2500,
+      attribA: 2297,
+      attribB: 600.04369,
+      attribC: false,
+      formula: (x: number, y: number) => x * 191 + y * 95.50,
+      description: 'Extended engine data specification for TileAtlas component index 191.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_191(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 63.03;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 191;
+  }
+
+  /** TileAtlas entry #192 record and formula calculation */
+  public static getTileAtlas_Item_192(): Record<string, any> {
+    return {
+      id: 192,
+      code: 'tileatlas_192',
+      name: 'Aetheria TileAtlas Unit #192',
+      tier: 20,
+      powerRatio: 336.0000,
+      attribA: 2309,
+      attribB: 603.18528,
+      attribC: true,
+      formula: (x: number, y: number) => x * 192 + y * 96.00,
+      description: 'Extended engine data specification for TileAtlas component index 192.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_192(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 63.36;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 192;
+  }
+
+  /** TileAtlas entry #193 record and formula calculation */
+  public static getTileAtlas_Item_193(): Record<string, any> {
+    return {
+      id: 193,
+      code: 'tileatlas_193',
+      name: 'Aetheria TileAtlas Unit #193',
+      tier: 20,
+      powerRatio: 337.7500,
+      attribA: 2321,
+      attribB: 606.32687,
+      attribC: false,
+      formula: (x: number, y: number) => x * 193 + y * 96.50,
+      description: 'Extended engine data specification for TileAtlas component index 193.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_193(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 63.690000000000005;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 193;
+  }
+
+  /** TileAtlas entry #194 record and formula calculation */
+  public static getTileAtlas_Item_194(): Record<string, any> {
+    return {
+      id: 194,
+      code: 'tileatlas_194',
+      name: 'Aetheria TileAtlas Unit #194',
+      tier: 20,
+      powerRatio: 339.5000,
+      attribA: 2333,
+      attribB: 609.46846,
+      attribC: true,
+      formula: (x: number, y: number) => x * 194 + y * 97.00,
+      description: 'Extended engine data specification for TileAtlas component index 194.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_194(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 64.02;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 194;
+  }
+
+  /** TileAtlas entry #195 record and formula calculation */
+  public static getTileAtlas_Item_195(): Record<string, any> {
+    return {
+      id: 195,
+      code: 'tileatlas_195',
+      name: 'Aetheria TileAtlas Unit #195',
+      tier: 20,
+      powerRatio: 341.2500,
+      attribA: 2345,
+      attribB: 612.61005,
+      attribC: false,
+      formula: (x: number, y: number) => x * 195 + y * 97.50,
+      description: 'Extended engine data specification for TileAtlas component index 195.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_195(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 64.35000000000001;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 195;
+  }
+
+  /** TileAtlas entry #196 record and formula calculation */
+  public static getTileAtlas_Item_196(): Record<string, any> {
+    return {
+      id: 196,
+      code: 'tileatlas_196',
+      name: 'Aetheria TileAtlas Unit #196',
+      tier: 20,
+      powerRatio: 343.0000,
+      attribA: 2357,
+      attribB: 615.75164,
+      attribC: true,
+      formula: (x: number, y: number) => x * 196 + y * 98.00,
+      description: 'Extended engine data specification for TileAtlas component index 196.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_196(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 64.68;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 196;
+  }
+
+  /** TileAtlas entry #197 record and formula calculation */
+  public static getTileAtlas_Item_197(): Record<string, any> {
+    return {
+      id: 197,
+      code: 'tileatlas_197',
+      name: 'Aetheria TileAtlas Unit #197',
+      tier: 20,
+      powerRatio: 344.7500,
+      attribA: 2369,
+      attribB: 618.89323,
+      attribC: false,
+      formula: (x: number, y: number) => x * 197 + y * 98.50,
+      description: 'Extended engine data specification for TileAtlas component index 197.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_197(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 65.01;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 197;
+  }
+
+  /** TileAtlas entry #198 record and formula calculation */
+  public static getTileAtlas_Item_198(): Record<string, any> {
+    return {
+      id: 198,
+      code: 'tileatlas_198',
+      name: 'Aetheria TileAtlas Unit #198',
+      tier: 20,
+      powerRatio: 346.5000,
+      attribA: 2381,
+      attribB: 622.03482,
+      attribC: true,
+      formula: (x: number, y: number) => x * 198 + y * 99.00,
+      description: 'Extended engine data specification for TileAtlas component index 198.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_198(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 65.34;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 198;
+  }
+
+  /** TileAtlas entry #199 record and formula calculation */
+  public static getTileAtlas_Item_199(): Record<string, any> {
+    return {
+      id: 199,
+      code: 'tileatlas_199',
+      name: 'Aetheria TileAtlas Unit #199',
+      tier: 20,
+      powerRatio: 348.2500,
+      attribA: 2393,
+      attribB: 625.17641,
+      attribC: false,
+      formula: (x: number, y: number) => x * 199 + y * 99.50,
+      description: 'Extended engine data specification for TileAtlas component index 199.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_199(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 65.67;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 199;
+  }
+
+  /** TileAtlas entry #200 record and formula calculation */
+  public static getTileAtlas_Item_200(): Record<string, any> {
+    return {
+      id: 200,
+      code: 'tileatlas_200',
+      name: 'Aetheria TileAtlas Unit #200',
+      tier: 21,
+      powerRatio: 350.0000,
+      attribA: 2405,
+      attribB: 628.31800,
+      attribC: true,
+      formula: (x: number, y: number) => x * 200 + y * 100.00,
+      description: 'Extended engine data specification for TileAtlas component index 200.'
+    };
+  }
+
+  public static processTileAtlas_Subroutine_200(inputVal: number, scaleFactor: number): number {
+    const base = inputVal * scaleFactor + 66;
+    const harmonic = Math.sin(base * 0.05) * Math.cos(inputVal * 0.02);
+    return base + harmonic * 200;
+  }
+
+}
